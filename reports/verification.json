@@ -1,0 +1,16 @@
+{
+  "verified_at_utc": "2026-10-12T08:12:03+00:00",
+  "python_environment": "project .venv, Python 3.13",
+  "unit_tests_passed": 9,
+  "checks": {
+    "offline_clean_tree_preparation_run_all": "passed",
+    "all_derived_output_hashes_reproduced": "passed",
+    "every_label_and_inspection_id_matched_raw_source": "passed",
+    "inspection_dates_matched_raw_source": "passed",
+    "current_results_and_violations_excluded_from_labelled_table": "passed",
+    "raw_row_count": 197882,
+    "labelled_row_count": 167538,
+    "adapted_example_run_all_from_nested_directory": "passed"
+  },
+  "offline_check": "A temporary source-only copy regenerated outputs while Python HTTP and external socket connections were rejected."
+}

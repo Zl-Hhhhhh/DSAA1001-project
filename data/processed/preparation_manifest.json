@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "inputs": {
+    "data/raw/food_inspections.csv.gz": "ada2d52b0ac2a782a1964160131e0d3d0d429f2bdc4c9dcd4fb7064660c3b46b",
+    "data/raw/download_metadata.json": "1358e56a16129c2ffe9f9b42e0d2a486ff9fe97aaddcf0a44e0499e8340cf1c7",
+    "data/raw/source_metadata.json": "d3c9f90fb63d733b8fc7d3edcc1e5d551efc1fc8e46e843c9e9e8a46ffed8d04",
+    "config/data.json": "bfebffb981def2f875f25dfb00656d8ce2789ab6fefe5aab725cb3be4a3c96a1",
+    "scripts/prepare_data.py": "5529cab99d55d795675e88b59c30f689daa7b974503be84a941a0c8e25f814e8"
+  },
+  "outputs": {
+    "data/processed/inspections.csv.gz": "dcde94519d1bb87cd1f8a7c203c006c0d2817639bcde98120b861cc8e7c962f9",
+    "data/processed/labelled_inspections.csv.gz": "65354d3f34c3560c5346ff3f3e64a53943d2ba681f24d480ead4ca6dc9636ec2",
+    "reports/data_quality.json": "640b3d48046afa7493e562de9ce306a172f78b57bb421f0a0879da50d162e491",
+    "reports/missing_values.csv": "f66c242b72b9fd396399e4b74e3c5e614c42392841fbd42243c4798adeb2cf91",
+    "reports/category_counts.csv": "cfe10cd350a712bff8c773f67b0bbd1bd9434eec4637db417782c70688fe5293",
+    "reports/annual_counts.csv": "bba77f9be58ec7eaef223e3b6125bfbc75066e70536e539a841cae182596cc33",
+    "reports/label_counts.csv": "e78f2510ee95ffb9dd5d94875b426e088abc2cabf18010d0a181e4a5bc54f756",
+    "reports/feature_availability.csv": "5b4f7d218834b7ba5084ec9057620c4a6f0ed91aa863f578ab7265a6887d56ad",
+    "reports/data_preparation.md": "d78d9ac6541779e0f9ce46021dca39e7c7d42d4fe91c9197579702abb388c958"
+  },
+  "history_rows": 197882,
+  "labelled_rows": 167538
+}

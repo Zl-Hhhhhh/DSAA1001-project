@@ -1,0 +1,929 @@
+table,column,value,count
+raw,Facility Type,,1030
+raw,Facility Type,1023,2
+raw,Facility Type,1023 CHILDERN'S SERVICES FACILITY,24
+raw,Facility Type,1023 CHILDREN'S SERVICES FACILITY,5
+raw,Facility Type,1023-CHILDREN'S SERVICES FACILITY,11
+raw,Facility Type,1475 LIQUOR,2
+raw,Facility Type,15 monts to 5 years old,6
+raw,Facility Type,A-Not-For-Profit Chef Training Program,11
+raw,Facility Type,ADULT DAY SERVICE,5
+raw,Facility Type,ADULT DAYCARE,21
+raw,Facility Type,AFTER SCHOOL PROGRAM,14
+raw,Facility Type,ARCHDIOCESE,3
+raw,Facility Type,ART CENTER,1
+raw,Facility Type,ART GALLERY,1
+raw,Facility Type,ASSISTED LIVING,26
+raw,Facility Type,Adult Family Care Center,6
+raw,Facility Type,Airport Lounge,11
+raw,Facility Type,Animal Shelter Cafe Permit,4
+raw,Facility Type,Assisted Living Senior Care,13
+raw,Facility Type,BAKERY/DELI,1
+raw,Facility Type,BANQUET,83
+raw,Facility Type,BANQUET FACILITY,3
+raw,Facility Type,BANQUET HALL,141
+raw,Facility Type,BANQUET HALL/CATERING,16
+raw,Facility Type,BANQUET ROOM,5
+raw,Facility Type,BAR,12
+raw,Facility Type,BEFORE AND AFTER SCHOOL PROGRAM,2
+raw,Facility Type,BEVERAGE/SILVERWARE WAREHOUSE,2
+raw,Facility Type,BREWERY,18
+raw,Facility Type,BUTCHER SHOP,4
+raw,Facility Type,"BUTCHER, DELI",4
+raw,Facility Type,Bakery,2821
+raw,Facility Type,Banquet,16
+raw,Facility Type,Banquet Dining,4
+raw,Facility Type,Banquet Hall,27
+raw,Facility Type,Banquet rooms,2
+raw,Facility Type,Banquet/kitchen,9
+raw,Facility Type,CAFE/STORE,1
+raw,Facility Type,CAFETERIA,28
+raw,Facility Type,CANDY SHOP,6
+raw,Facility Type,CANDY STORE,6
+raw,Facility Type,CANDY/GELATO,5
+raw,Facility Type,CATERED LIQUOR,2
+raw,Facility Type,CATERING/BANQUET,12
+raw,Facility Type,CATERING/CAFE,10
+raw,Facility Type,CHARITY AID KITCHEN,4
+raw,Facility Type,CHARTER,20
+raw,Facility Type,CHARTER SCHOOL,172
+raw,Facility Type,CHARTER SCHOOL CAFETERIA,7
+raw,Facility Type,CHILDERN'S SERVICES  FACILITY,1
+raw,Facility Type,CHILDRENS SERVICES FACILITY,18
+raw,Facility Type,CHINESE HERBS,1
+raw,Facility Type,CHURCH,16
+raw,Facility Type,CHURCH (FOOD PANTRY),1
+raw,Facility Type,CHURCH (SPECIAL EVENTS),6
+raw,Facility Type,CHURCH FOOD PANTRY,1
+raw,Facility Type,CHURCH KITCHEN,19
+raw,Facility Type,CHURCH/SPECIAL EVENT,3
+raw,Facility Type,CHURCH/SPECIAL EVENTS,9
+raw,Facility Type,CLOTHING STORE,2
+raw,Facility Type,COFFEE  SHOP,3
+raw,Facility Type,COFFEE AND/OR DRINKS,3
+raw,Facility Type,COFFEE CART,1
+raw,Facility Type,COFFEE KIOSK,6
+raw,Facility Type,COFFEE ROASTER,2
+raw,Facility Type,COFFEE SHOP,9
+raw,Facility Type,COFFEE/TEA,1
+raw,Facility Type,COLD STORAGE FACILITY,2
+raw,Facility Type,COLD/FROZEN FOOD STORAGE,1
+raw,Facility Type,COLLEGE,5
+raw,Facility Type,COMMIASARY,1
+raw,Facility Type,COMMISARY,9
+raw,Facility Type,COMMISSARY,22
+raw,Facility Type,COMMISSARY FOR SOFT SERVE ICE CREAM TRUCKS,2
+raw,Facility Type,CONVENIENCE,6
+raw,Facility Type,CONVENIENCE STORE,19
+raw,Facility Type,CONVENIENCE/GAS STATION,2
+raw,Facility Type,CONVENIENT STORE,7
+raw,Facility Type,CONVNIENCE STORE,1
+raw,Facility Type,COOKING CLASS,4
+raw,Facility Type,COOKING SCHOOL,43
+raw,Facility Type,CPS (CHARTER),2
+raw,Facility Type,CULINARY ARTS SCHOOL,1
+raw,Facility Type,CULINARY CLASS ROOMS,3
+raw,Facility Type,CULINARY KITCHEN,4
+raw,Facility Type,CULINARY SCHOOL,18
+raw,Facility Type,CUSTOM POULTRY SLAUGHTER,8
+raw,Facility Type,Cafeteria,5
+raw,Facility Type,Catering,1274
+raw,Facility Type,Children's Services Facility,6283
+raw,Facility Type,Church,4
+raw,Facility Type,Coffee shop,10
+raw,Facility Type,DAY CARE 2-14,11
+raw,Facility Type,DAYCARE,39
+raw,Facility Type,DAYCARE 2 YRS TO 12 YRS,14
+raw,Facility Type,DAYCARE 6 WKS-5YRS,1
+raw,Facility Type,DAYCARE COMBO,2
+raw,Facility Type,DELI/BAKERY,3
+raw,Facility Type,DINING HALL,18
+raw,Facility Type,DISTILLERY WITH TASTING ROOM,3
+raw,Facility Type,DISTRIBUTION CENTER,7
+raw,Facility Type,DISTRIBUTION WAREHOUSE,1
+raw,Facility Type,DISTRIBUTOR,2
+raw,Facility Type,DOLLAR & GROCERY STORE,3
+raw,Facility Type,DOLLAR STORE,2
+raw,Facility Type,DOLLAR STORE WITH GROCERY,2
+raw,Facility Type,DOLLAR TREE,3
+raw,Facility Type,DRUG STORE,5
+raw,Facility Type,DRUG STORE/GROCERY,1
+raw,Facility Type,Daycare (2 - 6 Years),1514
+raw,Facility Type,Daycare (Under 2 Years),136
+raw,Facility Type,Daycare Above and Under 2 Years,2824
+raw,Facility Type,Daycare Combo 1586,173
+raw,Facility Type,Daycare Night,12
+raw,Facility Type,ENTERTAINMENT VENUE,2
+raw,Facility Type,EVENT CENTER,14
+raw,Facility Type,EVENT SPACE,16
+raw,Facility Type,EVENT VENU,2
+raw,Facility Type,EXERCISE AND NUTRITION BAR,5
+raw,Facility Type,FITNESS CENTER,13
+raw,Facility Type,FITNESS STUDIO,3
+raw,Facility Type,FLEA MARKET,2
+raw,Facility Type,FOOD BOOTH,3
+raw,Facility Type,FOOD HALL,3
+raw,Facility Type,FOOD PANTRY,3
+raw,Facility Type,FREE FOOD PANTRY,2
+raw,Facility Type,FRENCH MARKET SPACE,5
+raw,Facility Type,FROZEN DESSERT PUSHCARTS,6
+raw,Facility Type,FURNITURE STORE,1
+raw,Facility Type,Food Pantry,2
+raw,Facility Type,GAS STATION,128
+raw,Facility Type,GAS STATION FOOD STORE,1
+raw,Facility Type,GAS STATION STORE,4
+raw,Facility Type,GAS STATION/CONVENIENCE STORE,6
+raw,Facility Type,GAS STATION/FOOD,6
+raw,Facility Type,GAS STATION/GROCERY,20
+raw,Facility Type,GAS STATION/MINI MART,5
+raw,Facility Type,GAS STATION/RESTAURANT,6
+raw,Facility Type,GAS STATION/STORE,9
+raw,Facility Type,GAS/MINI MART,1
+raw,Facility Type,GELATO SHOP,1
+raw,Facility Type,GENERAL STORE,1
+raw,Facility Type,GOLF COURSE CONNCESSION STAND,1
+raw,Facility Type,GREENHOUSE,2
+raw,Facility Type,GROCERY,1
+raw,Facility Type,GROCERY & LIQUOR STORE,4
+raw,Facility Type,GROCERY AND BUTCHER,2
+raw,Facility Type,GROCERY STORE,4
+raw,Facility Type,GROCERY STORE /PHARMACY,2
+raw,Facility Type,GROCERY STORE PLUS WIRELESS STORE,3
+raw,Facility Type,GROCERY STORE/BAKERY,4
+raw,Facility Type,GROCERY STORE/COOKING SCHOOL,13
+raw,Facility Type,GROCERY STORE/GAS STATION,51
+raw,Facility Type,GROCERY STORE/RESTAURANT,4
+raw,Facility Type,GROCERY(GAS STATION),2
+raw,Facility Type,GROCERY/BAKERY,14
+raw,Facility Type,GROCERY/DELI,6
+raw,Facility Type,GROCERY/DRUG STORE,7
+raw,Facility Type,GROCERY/GAS STATION,10
+raw,Facility Type,GROCERY/LIQUOR STORE,1
+raw,Facility Type,GROCERY/RESTAURANT,18
+raw,Facility Type,GROCERY/SERVICE GAS STATION,1
+raw,Facility Type,GROCERY/TAQUERIA,8
+raw,Facility Type,GYM,2
+raw,Facility Type,GYM STORE,7
+raw,Facility Type,Gift Shop,1
+raw,Facility Type,Golden Diner,570
+raw,Facility Type,Grocery & Restaurant,17
+raw,Facility Type,Grocery Store,21080
+raw,Facility Type,Grocery(Sushi prep),15
+raw,Facility Type,HAIR SALON,2
+raw,Facility Type,HEALTH CARE STORE,3
+raw,Facility Type,HEALTH CENTER,1
+raw,Facility Type,HEALTH FOOD STORE,1
+raw,Facility Type,HELICOPTER TERMINAL,2
+raw,Facility Type,HERBAL DRINKS,5
+raw,Facility Type,HERBAL LIFE,6
+raw,Facility Type,HERBAL LIFE SHOP,5
+raw,Facility Type,HERBAL MEDICINE,2
+raw,Facility Type,HERBAL REMEDY,1
+raw,Facility Type,HERBALCAL,1
+raw,Facility Type,HERBALIFE,32
+raw,Facility Type,HERBALIFE STORE,1
+raw,Facility Type,HERBALIFE/ZUMBA,4
+raw,Facility Type,HIGH SCHOOL KITCHEN,7
+raw,Facility Type,HOSTEL,7
+raw,Facility Type,HOT DOG STATION,5
+raw,Facility Type,HOTEL,44
+raw,Facility Type,Hair Salon,2
+raw,Facility Type,Herabalife,4
+raw,Facility Type,Herbalife Nutrition,3
+raw,Facility Type,Hospital,708
+raw,Facility Type,ICE CREAM,8
+raw,Facility Type,ICE CREAM SHOP,28
+raw,Facility Type,Internet Cafe,1
+raw,Facility Type,JUICE AND SALAD BAR,2
+raw,Facility Type,JUICE BAR,9
+raw,Facility Type,JUICE BAR/GROCERY,3
+raw,Facility Type,KIOSK,4
+raw,Facility Type,KITCHEN DEMO,3
+raw,Facility Type,LIMITED BUSINESS,1
+raw,Facility Type,LIQOUR BREWERY TASTING,2
+raw,Facility Type,LIQUOR STORE,2
+raw,Facility Type,LIQUOR/COFFEE KIOSK,6
+raw,Facility Type,LIQUOR/GROCERY,2
+raw,Facility Type,LIQUOR/GROCERY STORE/BAR,7
+raw,Facility Type,LIVE POULTRY,63
+raw,Facility Type,LIVE POULTRY SLAUGHTER,4
+raw,Facility Type,LIVE POULTRY SLAUGHTER FACILITY,4
+raw,Facility Type,LOUNGE/BANQUET HALL,13
+raw,Facility Type,Laundromat,3
+raw,Facility Type,Liquor,809
+raw,Facility Type,Live Poultry,14
+raw,Facility Type,Long Term Care,1803
+raw,Facility Type,Long-Term Care,1
+raw,Facility Type,Lounge,3
+raw,Facility Type,MFD TRUCK,3
+raw,Facility Type,MFP,3
+raw,Facility Type,MILK TEA,5
+raw,Facility Type,MOBILE DESSERTS VENDOR,8
+raw,Facility Type,MOBILE FOOD,14
+raw,Facility Type,MOBILE FOOD DESSERTS VENDOR,1
+raw,Facility Type,MOBILE FOOD TRUCK,1
+raw,Facility Type,MOBILE FROZEN DESSERT VENDOR,1
+raw,Facility Type,MOBILE PUSH CART,3
+raw,Facility Type,MOBILPREPARED FOOD VENDOR,4
+raw,Facility Type,MOVIE THEATER,11
+raw,Facility Type,MOVIE THEATRE,10
+raw,Facility Type,MUSIC VENUE,14
+raw,Facility Type,Mobile Food Dispenser,298
+raw,Facility Type,Mobile Food Preparer,1132
+raw,Facility Type,Mobile Frozen Desserts Vendor,78
+raw,Facility Type,Mobile Prepared Food Vendor,160
+raw,Facility Type,Museum/Gallery,2
+raw,Facility Type,NAIL SALON,2
+raw,Facility Type,NEWSSTAND,1
+raw,Facility Type,NIGHT CLUB,12
+raw,Facility Type,NORTHERLY ISLAND,3
+raw,Facility Type,NOT-FOR-PROFIT CLUB,8
+raw,Facility Type,NURSING HOME,15
+raw,Facility Type,NUTRITION SHAKES,5
+raw,Facility Type,NUTRITION..SMOOTHIES/SHAKES,3
+raw,Facility Type,Navy Pier Kiosk,20
+raw,Facility Type,OUTREACH CULINARY KITCHEN,12
+raw,Facility Type,Other,17
+raw,Facility Type,PACKAGED HEALTH FOODS,5
+raw,Facility Type,PALETERIA,17
+raw,Facility Type,PASTRY SCHOOL,3
+raw,Facility Type,PASTRY school,8
+raw,Facility Type,PHARMACY,1
+raw,Facility Type,POPCORN CORN,4
+raw,Facility Type,POULTRY SLAUGHTER,5
+raw,Facility Type,PRE PACKAGED,3
+raw,Facility Type,PREP INSIDE SCHOOL,3
+raw,Facility Type,PREPACAKAGED FOODS,1
+raw,Facility Type,PREPACKAGE MEAL DISTRIBUTOR (1006 Retail),1
+raw,Facility Type,PRIVATE CLUB,3
+raw,Facility Type,PRIVATE EVENT SPACE,2
+raw,Facility Type,PRIVATE SCHOOL,80
+raw,Facility Type,PUBLIC SHCOOL,16
+raw,Facility Type,PUSH CARTS,3
+raw,Facility Type,Pop-Up Establishment Host-Tier II,62
+raw,Facility Type,Pop-Up Establishment Host-Tier III,12
+raw,Facility Type,Pop-Up Food Establishment User-Tier I,1
+raw,Facility Type,Pop-Up Food Establishment User-Tier II,17
+raw,Facility Type,Poultry Slaughter,4
+raw,Facility Type,Private School,12
+raw,Facility Type,REGULATED BUSINESS,10
+raw,Facility Type,REHAB CENTER,16
+raw,Facility Type,REPACKAGING PLANT,1
+raw,Facility Type,REST/GROCERY,3
+raw,Facility Type,RESTAURANT AND LIQUOR,1
+raw,Facility Type,RESTAURANT.BANQUET HALLS,4
+raw,Facility Type,RESTAURANT/BAR,35
+raw,Facility Type,RESTAURANT/BAR/THEATER,2
+raw,Facility Type,RESTAURANT/GROCERY STORE,24
+raw,Facility Type,RETAIL,4
+raw,Facility Type,RETAIL FOOD,3
+raw,Facility Type,RETAIL SALES,2
+raw,Facility Type,RETAIL STORE OFFERS COOKING CLASSES,6
+raw,Facility Type,RETAIL WINE/WINE BAR,2
+raw,Facility Type,RIVERWALK,11
+raw,Facility Type,ROOF TOP,18
+raw,Facility Type,ROOF TOPS,20
+raw,Facility Type,ROOFTOP,48
+raw,Facility Type,ROOFTOPS,48
+raw,Facility Type,ROOM SERVICE,1
+raw,Facility Type,Rest/GYM,4
+raw,Facility Type,Restaurant,138442
+raw,Facility Type,Restaurant(protein shake bar),4
+raw,Facility Type,SENIOR DAY CARE,13
+raw,Facility Type,SERVICE GAS STATION,1
+raw,Facility Type,SHAKES/TEAS,3
+raw,Facility Type,SHELTER,2
+raw,Facility Type,SLAUGHTER HOUSE/ GROCERY,6
+raw,Facility Type,SMOKEHOUSE,1
+raw,Facility Type,SOCIAL CLUB,3
+raw,Facility Type,SOUP KITCHEN AND PANTRY,2
+raw,Facility Type,SPA,2
+raw,Facility Type,STADIUM,42
+raw,Facility Type,STORE,35
+raw,Facility Type,SUIT STORE,2
+raw,Facility Type,SUMMER FEEDING PREP AREA,2
+raw,Facility Type,SUPPORTIVE LIVING,41
+raw,Facility Type,SUSHI COUNTER,5
+raw,Facility Type,School,12270
+raw,Facility Type,Shared Kitchen,300
+raw,Facility Type,Shared Kitchen Supplemental,3
+raw,Facility Type,Shared Kitchen User (Long Term),345
+raw,Facility Type,Shared Kitchen User (Short Term),16
+raw,Facility Type,Shelter,87
+raw,Facility Type,Shuffleboard Club with Bar,3
+raw,Facility Type,Special Event,247
+raw,Facility Type,TAP room/tavern/liquor store,1
+raw,Facility Type,TAVERN,258
+raw,Facility Type,TAVERN/LIQUOR,2
+raw,Facility Type,TAVERN/PACKAGED GOODS,2
+raw,Facility Type,TEACHING SCHOOL,4
+raw,Facility Type,TEST KITCHEN/ STORAGE,3
+raw,Facility Type,THC INFUSED BAKERY,8
+raw,Facility Type,THEATER,12
+raw,Facility Type,THEATRE,13
+raw,Facility Type,TOBACCO STORE,2
+raw,Facility Type,TRUCK,2
+raw,Facility Type,Tavern,3
+raw,Facility Type,Tavern/Bar,1
+raw,Facility Type,UNIVERSITY CAFETERIA,17
+raw,Facility Type,UNLICENSED FACILITY,2
+raw,Facility Type,UNUSED STORAGE,1
+raw,Facility Type,VENDING COMMISSARY,11
+raw,Facility Type,VENDING MACHINE,2
+raw,Facility Type,VFW HALL,5
+raw,Facility Type,WAREHOUSE,7
+raw,Facility Type,WEIGHT LOSS PROGRAM,1
+raw,Facility Type,WHOLESALE & RETAIL,3
+raw,Facility Type,WRIGLEY ROOFTOP,10
+raw,Facility Type,Wholesale,109
+raw,Facility Type,Wrigley Roof Top,3
+raw,Facility Type,banquets,10
+raw,Facility Type,bar,11
+raw,Facility Type,blockbuster video,1
+raw,Facility Type,butcher shop,2
+raw,Facility Type,cafeteria,2
+raw,Facility Type,coffee shop,12
+raw,Facility Type,convenience,4
+raw,Facility Type,convenience store,8
+raw,Facility Type,convenience/drug store,3
+raw,Facility Type,cooking school,11
+raw,Facility Type,donut shop,7
+raw,Facility Type,employee kitchen,3
+raw,Facility Type,fish market,1
+raw,Facility Type,fitness center,1
+raw,Facility Type,gas station,6
+raw,Facility Type,grocery/dollar store,5
+raw,Facility Type,hair salon,2
+raw,Facility Type,health club,1
+raw,Facility Type,hooka lounge,1
+raw,Facility Type,liquor store,3
+raw,Facility Type,meat packing,2
+raw,Facility Type,private school,7
+raw,Facility Type,school,4
+raw,Facility Type,school cafeteria,6
+raw,Facility Type,smoothie bar,3
+raw,Facility Type,snack shop,1
+raw,Facility Type,store,3
+raw,Facility Type,tavern,8
+raw,Facility Type,theater,1
+raw,Facility Type,weight loss program,1
+raw,Facility Type,youth housing,7
+raw,Risk,,39
+raw,Risk,All,76
+raw,Risk,Risk 1 (High),154544
+raw,Risk,Risk 2 (Medium),31717
+raw,Risk,Risk 3 (Low),11506
+raw,Inspection Type,,1
+raw,Inspection Type,ASSESSMENT,1
+raw,Inspection Type,COVID COMPLAINT,1
+raw,Inspection Type,Canvass,100958
+raw,Inspection Type,Canvass Re-Inspection,24362
+raw,Inspection Type,Complaint,19374
+raw,Inspection Type,Complaint Re-Inspection,8213
+raw,Inspection Type,Consultation,48
+raw,Inspection Type,FIRE,1
+raw,Inspection Type,License,27005
+raw,Inspection Type,License Re-Inspection,6757
+raw,Inspection Type,NO ENTRY,1
+raw,Inspection Type,Non-Inspection,5728
+raw,Inspection Type,Not Ready,16
+raw,Inspection Type,OUT OF BUSINESS,1
+raw,Inspection Type,Recent Inspection,413
+raw,Inspection Type,Recent inspection,1
+raw,Inspection Type,Short Form Complaint,4485
+raw,Inspection Type,Special Events (Festivals),8
+raw,Inspection Type,Suspected Food Poisoning,413
+raw,Inspection Type,Suspected Food Poisoning Re-inspection,91
+raw,Inspection Type,Tag Removal,3
+raw,Inspection Type,fire complaint,1
+raw,Results,Business Not Located,42
+raw,Results,Fail,37863
+raw,Results,No Entry,11606
+raw,Results,Not Ready,4377
+raw,Results,Out of Business,14319
+raw,Results,Pass,93378
+raw,Results,Pass w/ Conditions,36297
+raw,City,,125
+raw,City,312CHICAGO,7
+raw,City,ALGONQUIN,1
+raw,City,AURORA,1
+raw,City,BALDWIN PARK,1
+raw,City,BERWYN,7
+raw,City,BOLINGBROOK,1
+raw,City,BRIDGEVIEW,4
+raw,City,BROOKFIELD,1
+raw,City,BURBANK,2
+raw,City,BURNHAM,1
+raw,City,CALUMET CITY,4
+raw,City,CAROL STREAM,2
+raw,City,CCHICAGO,35
+raw,City,CH,2
+raw,City,CHICAGO,197065
+raw,City,CHICAGO.,10
+raw,City,CHICAGOC,2
+raw,City,CHICAGOCHICAGO,9
+raw,City,CHICAGOO,11
+raw,City,CHicago,14
+raw,City,CICERO,3
+raw,City,Chicago,313
+raw,City,ELK GROVE VILLAGE,6
+raw,City,ELMHURST,4
+raw,City,EVANSTON,27
+raw,City,EVERGREEN,1
+raw,City,EVERGREEN PARK,1
+raw,City,GLEN ELLYN,1
+raw,City,GRAYSLAKE,1
+raw,City,GRIFFITH,1
+raw,City,HAMMOND,1
+raw,City,HIGHLAND PARK,4
+raw,City,INGLEWOOD,1
+raw,City,LAKE BLUFF,1
+raw,City,LAKE ZURICH,1
+raw,City,LANSING,1
+raw,City,LOS ANGELES,2
+raw,City,MAPLE PARK,1
+raw,City,MATTESON,1
+raw,City,MAYWOOD,3
+raw,City,MERRILLVILLE,1
+raw,City,MERRIVILLE,8
+raw,City,MORTON GROVE,1
+raw,City,MOUNT PROSPECT,1
+raw,City,NAPERVILLE,3
+raw,City,NEW HOLSTEIN,1
+raw,City,NEW YORK,1
+raw,City,NILES NILES,7
+raw,City,OAK LAWN,1
+raw,City,OAK PARK,10
+raw,City,ORLAND PARK,1
+raw,City,PALOS PARK,1
+raw,City,PLAINFIELD,5
+raw,City,RIPON,2
+raw,City,ROSEMONT,3
+raw,City,SCHAUMBURG,26
+raw,City,SCHILLER PARK,3
+raw,City,SKOKIE,6
+raw,City,SUMMIT,1
+raw,City,TORRANCE,2
+raw,City,WADSWORTH,1
+raw,City,WASHINGTON,1
+raw,City,WESTERN SPRINGS,1
+raw,City,WHEATON,1
+raw,City,WHITING,1
+raw,City,WILMETTE,1
+raw,City,ZION,1
+raw,City,chicago,111
+raw,City,chicagoBEDFORD PARK,1
+raw,State,,73
+raw,State,CA,6
+raw,State,CO,1
+raw,State,DC,1
+raw,State,IL,197784
+raw,State,IN,13
+raw,State,NY,1
+raw,State,WI,3
+processed_history,facility_type,1023,2
+processed_history,facility_type,1023 CHILDERN'S SERVICES FACILITY,24
+processed_history,facility_type,1023 CHILDREN'S SERVICES FACILITY,5
+processed_history,facility_type,1023-CHILDREN'S SERVICES FACILITY,11
+processed_history,facility_type,1475 LIQUOR,2
+processed_history,facility_type,15 MONTS TO 5 YEARS OLD,6
+processed_history,facility_type,A-NOT-FOR-PROFIT CHEF TRAINING PROGRAM,11
+processed_history,facility_type,ADULT DAY SERVICE,5
+processed_history,facility_type,ADULT DAYCARE,21
+processed_history,facility_type,ADULT FAMILY CARE CENTER,6
+processed_history,facility_type,AFTER SCHOOL PROGRAM,14
+processed_history,facility_type,AIRPORT LOUNGE,11
+processed_history,facility_type,ANIMAL SHELTER CAFE PERMIT,4
+processed_history,facility_type,ARCHDIOCESE,3
+processed_history,facility_type,ART CENTER,1
+processed_history,facility_type,ART GALLERY,1
+processed_history,facility_type,ASSISTED LIVING,26
+processed_history,facility_type,ASSISTED LIVING SENIOR CARE,13
+processed_history,facility_type,BAKERY,2821
+processed_history,facility_type,BAKERY/DELI,1
+processed_history,facility_type,BANQUET,99
+processed_history,facility_type,BANQUET DINING,4
+processed_history,facility_type,BANQUET FACILITY,3
+processed_history,facility_type,BANQUET HALL,168
+processed_history,facility_type,BANQUET HALL/CATERING,16
+processed_history,facility_type,BANQUET ROOM,5
+processed_history,facility_type,BANQUET ROOMS,2
+processed_history,facility_type,BANQUET/KITCHEN,9
+processed_history,facility_type,BANQUETS,10
+processed_history,facility_type,BAR,23
+processed_history,facility_type,BEFORE AND AFTER SCHOOL PROGRAM,2
+processed_history,facility_type,BEVERAGE/SILVERWARE WAREHOUSE,2
+processed_history,facility_type,BLOCKBUSTER VIDEO,1
+processed_history,facility_type,BREWERY,18
+processed_history,facility_type,BUTCHER SHOP,6
+processed_history,facility_type,"BUTCHER, DELI",4
+processed_history,facility_type,CAFE/STORE,1
+processed_history,facility_type,CAFETERIA,35
+processed_history,facility_type,CANDY SHOP,6
+processed_history,facility_type,CANDY STORE,6
+processed_history,facility_type,CANDY/GELATO,5
+processed_history,facility_type,CATERED LIQUOR,2
+processed_history,facility_type,CATERING,1274
+processed_history,facility_type,CATERING/BANQUET,12
+processed_history,facility_type,CATERING/CAFE,10
+processed_history,facility_type,CHARITY AID KITCHEN,4
+processed_history,facility_type,CHARTER,20
+processed_history,facility_type,CHARTER SCHOOL,172
+processed_history,facility_type,CHARTER SCHOOL CAFETERIA,7
+processed_history,facility_type,CHILDERN'S SERVICES FACILITY,1
+processed_history,facility_type,CHILDREN'S SERVICES FACILITY,6283
+processed_history,facility_type,CHILDRENS SERVICES FACILITY,18
+processed_history,facility_type,CHINESE HERBS,1
+processed_history,facility_type,CHURCH,20
+processed_history,facility_type,CHURCH (FOOD PANTRY),1
+processed_history,facility_type,CHURCH (SPECIAL EVENTS),6
+processed_history,facility_type,CHURCH FOOD PANTRY,1
+processed_history,facility_type,CHURCH KITCHEN,19
+processed_history,facility_type,CHURCH/SPECIAL EVENT,3
+processed_history,facility_type,CHURCH/SPECIAL EVENTS,9
+processed_history,facility_type,CLOTHING STORE,2
+processed_history,facility_type,COFFEE AND/OR DRINKS,3
+processed_history,facility_type,COFFEE CART,1
+processed_history,facility_type,COFFEE KIOSK,6
+processed_history,facility_type,COFFEE ROASTER,2
+processed_history,facility_type,COFFEE SHOP,34
+processed_history,facility_type,COFFEE/TEA,1
+processed_history,facility_type,COLD STORAGE FACILITY,2
+processed_history,facility_type,COLD/FROZEN FOOD STORAGE,1
+processed_history,facility_type,COLLEGE,5
+processed_history,facility_type,COMMIASARY,1
+processed_history,facility_type,COMMISARY,9
+processed_history,facility_type,COMMISSARY,22
+processed_history,facility_type,COMMISSARY FOR SOFT SERVE ICE CREAM TRUCKS,2
+processed_history,facility_type,CONVENIENCE,10
+processed_history,facility_type,CONVENIENCE STORE,27
+processed_history,facility_type,CONVENIENCE/DRUG STORE,3
+processed_history,facility_type,CONVENIENCE/GAS STATION,2
+processed_history,facility_type,CONVENIENT STORE,7
+processed_history,facility_type,CONVNIENCE STORE,1
+processed_history,facility_type,COOKING CLASS,4
+processed_history,facility_type,COOKING SCHOOL,54
+processed_history,facility_type,CPS (CHARTER),2
+processed_history,facility_type,CULINARY ARTS SCHOOL,1
+processed_history,facility_type,CULINARY CLASS ROOMS,3
+processed_history,facility_type,CULINARY KITCHEN,4
+processed_history,facility_type,CULINARY SCHOOL,18
+processed_history,facility_type,CUSTOM POULTRY SLAUGHTER,8
+processed_history,facility_type,DAY CARE 2-14,11
+processed_history,facility_type,DAYCARE,39
+processed_history,facility_type,DAYCARE (2 - 6 YEARS),1514
+processed_history,facility_type,DAYCARE (UNDER 2 YEARS),136
+processed_history,facility_type,DAYCARE 2 YRS TO 12 YRS,14
+processed_history,facility_type,DAYCARE 6 WKS-5YRS,1
+processed_history,facility_type,DAYCARE ABOVE AND UNDER 2 YEARS,2824
+processed_history,facility_type,DAYCARE COMBO,2
+processed_history,facility_type,DAYCARE COMBO 1586,173
+processed_history,facility_type,DAYCARE NIGHT,12
+processed_history,facility_type,DELI/BAKERY,3
+processed_history,facility_type,DINING HALL,18
+processed_history,facility_type,DISTILLERY WITH TASTING ROOM,3
+processed_history,facility_type,DISTRIBUTION CENTER,7
+processed_history,facility_type,DISTRIBUTION WAREHOUSE,1
+processed_history,facility_type,DISTRIBUTOR,2
+processed_history,facility_type,DOLLAR & GROCERY STORE,3
+processed_history,facility_type,DOLLAR STORE,2
+processed_history,facility_type,DOLLAR STORE WITH GROCERY,2
+processed_history,facility_type,DOLLAR TREE,3
+processed_history,facility_type,DONUT SHOP,7
+processed_history,facility_type,DRUG STORE,5
+processed_history,facility_type,DRUG STORE/GROCERY,1
+processed_history,facility_type,EMPLOYEE KITCHEN,3
+processed_history,facility_type,ENTERTAINMENT VENUE,2
+processed_history,facility_type,EVENT CENTER,14
+processed_history,facility_type,EVENT SPACE,16
+processed_history,facility_type,EVENT VENU,2
+processed_history,facility_type,EXERCISE AND NUTRITION BAR,5
+processed_history,facility_type,FISH MARKET,1
+processed_history,facility_type,FITNESS CENTER,14
+processed_history,facility_type,FITNESS STUDIO,3
+processed_history,facility_type,FLEA MARKET,2
+processed_history,facility_type,FOOD BOOTH,3
+processed_history,facility_type,FOOD HALL,3
+processed_history,facility_type,FOOD PANTRY,5
+processed_history,facility_type,FREE FOOD PANTRY,2
+processed_history,facility_type,FRENCH MARKET SPACE,5
+processed_history,facility_type,FROZEN DESSERT PUSHCARTS,6
+processed_history,facility_type,FURNITURE STORE,1
+processed_history,facility_type,GAS STATION,134
+processed_history,facility_type,GAS STATION FOOD STORE,1
+processed_history,facility_type,GAS STATION STORE,4
+processed_history,facility_type,GAS STATION/CONVENIENCE STORE,6
+processed_history,facility_type,GAS STATION/FOOD,6
+processed_history,facility_type,GAS STATION/GROCERY,20
+processed_history,facility_type,GAS STATION/MINI MART,5
+processed_history,facility_type,GAS STATION/RESTAURANT,6
+processed_history,facility_type,GAS STATION/STORE,9
+processed_history,facility_type,GAS/MINI MART,1
+processed_history,facility_type,GELATO SHOP,1
+processed_history,facility_type,GENERAL STORE,1
+processed_history,facility_type,GIFT SHOP,1
+processed_history,facility_type,GOLDEN DINER,570
+processed_history,facility_type,GOLF COURSE CONNCESSION STAND,1
+processed_history,facility_type,GREENHOUSE,2
+processed_history,facility_type,GROCERY,1
+processed_history,facility_type,GROCERY & LIQUOR STORE,4
+processed_history,facility_type,GROCERY & RESTAURANT,17
+processed_history,facility_type,GROCERY AND BUTCHER,2
+processed_history,facility_type,GROCERY STORE,21084
+processed_history,facility_type,GROCERY STORE /PHARMACY,2
+processed_history,facility_type,GROCERY STORE PLUS WIRELESS STORE,3
+processed_history,facility_type,GROCERY STORE/BAKERY,4
+processed_history,facility_type,GROCERY STORE/COOKING SCHOOL,13
+processed_history,facility_type,GROCERY STORE/GAS STATION,51
+processed_history,facility_type,GROCERY STORE/RESTAURANT,4
+processed_history,facility_type,GROCERY(GAS STATION),2
+processed_history,facility_type,GROCERY(SUSHI PREP),15
+processed_history,facility_type,GROCERY/BAKERY,14
+processed_history,facility_type,GROCERY/DELI,6
+processed_history,facility_type,GROCERY/DOLLAR STORE,5
+processed_history,facility_type,GROCERY/DRUG STORE,7
+processed_history,facility_type,GROCERY/GAS STATION,10
+processed_history,facility_type,GROCERY/LIQUOR STORE,1
+processed_history,facility_type,GROCERY/RESTAURANT,18
+processed_history,facility_type,GROCERY/SERVICE GAS STATION,1
+processed_history,facility_type,GROCERY/TAQUERIA,8
+processed_history,facility_type,GYM,2
+processed_history,facility_type,GYM STORE,7
+processed_history,facility_type,HAIR SALON,6
+processed_history,facility_type,HEALTH CARE STORE,3
+processed_history,facility_type,HEALTH CENTER,1
+processed_history,facility_type,HEALTH CLUB,1
+processed_history,facility_type,HEALTH FOOD STORE,1
+processed_history,facility_type,HELICOPTER TERMINAL,2
+processed_history,facility_type,HERABALIFE,4
+processed_history,facility_type,HERBAL DRINKS,5
+processed_history,facility_type,HERBAL LIFE,6
+processed_history,facility_type,HERBAL LIFE SHOP,5
+processed_history,facility_type,HERBAL MEDICINE,2
+processed_history,facility_type,HERBAL REMEDY,1
+processed_history,facility_type,HERBALCAL,1
+processed_history,facility_type,HERBALIFE,32
+processed_history,facility_type,HERBALIFE NUTRITION,3
+processed_history,facility_type,HERBALIFE STORE,1
+processed_history,facility_type,HERBALIFE/ZUMBA,4
+processed_history,facility_type,HIGH SCHOOL KITCHEN,7
+processed_history,facility_type,HOOKA LOUNGE,1
+processed_history,facility_type,HOSPITAL,708
+processed_history,facility_type,HOSTEL,7
+processed_history,facility_type,HOT DOG STATION,5
+processed_history,facility_type,HOTEL,44
+processed_history,facility_type,ICE CREAM,8
+processed_history,facility_type,ICE CREAM SHOP,28
+processed_history,facility_type,INTERNET CAFE,1
+processed_history,facility_type,JUICE AND SALAD BAR,2
+processed_history,facility_type,JUICE BAR,9
+processed_history,facility_type,JUICE BAR/GROCERY,3
+processed_history,facility_type,KIOSK,4
+processed_history,facility_type,KITCHEN DEMO,3
+processed_history,facility_type,LAUNDROMAT,3
+processed_history,facility_type,LIMITED BUSINESS,1
+processed_history,facility_type,LIQOUR BREWERY TASTING,2
+processed_history,facility_type,LIQUOR,809
+processed_history,facility_type,LIQUOR STORE,5
+processed_history,facility_type,LIQUOR/COFFEE KIOSK,6
+processed_history,facility_type,LIQUOR/GROCERY,2
+processed_history,facility_type,LIQUOR/GROCERY STORE/BAR,7
+processed_history,facility_type,LIVE POULTRY,77
+processed_history,facility_type,LIVE POULTRY SLAUGHTER,4
+processed_history,facility_type,LIVE POULTRY SLAUGHTER FACILITY,4
+processed_history,facility_type,LONG TERM CARE,1803
+processed_history,facility_type,LONG-TERM CARE,1
+processed_history,facility_type,LOUNGE,3
+processed_history,facility_type,LOUNGE/BANQUET HALL,13
+processed_history,facility_type,MEAT PACKING,2
+processed_history,facility_type,MFD TRUCK,3
+processed_history,facility_type,MFP,3
+processed_history,facility_type,MILK TEA,5
+processed_history,facility_type,MOBILE DESSERTS VENDOR,8
+processed_history,facility_type,MOBILE FOOD,14
+processed_history,facility_type,MOBILE FOOD DESSERTS VENDOR,1
+processed_history,facility_type,MOBILE FOOD DISPENSER,298
+processed_history,facility_type,MOBILE FOOD PREPARER,1132
+processed_history,facility_type,MOBILE FOOD TRUCK,1
+processed_history,facility_type,MOBILE FROZEN DESSERT VENDOR,1
+processed_history,facility_type,MOBILE FROZEN DESSERTS VENDOR,78
+processed_history,facility_type,MOBILE PREPARED FOOD VENDOR,160
+processed_history,facility_type,MOBILE PUSH CART,3
+processed_history,facility_type,MOBILPREPARED FOOD VENDOR,4
+processed_history,facility_type,MOVIE THEATER,11
+processed_history,facility_type,MOVIE THEATRE,10
+processed_history,facility_type,MUSEUM/GALLERY,2
+processed_history,facility_type,MUSIC VENUE,14
+processed_history,facility_type,NAIL SALON,2
+processed_history,facility_type,NAVY PIER KIOSK,20
+processed_history,facility_type,NEWSSTAND,1
+processed_history,facility_type,NIGHT CLUB,12
+processed_history,facility_type,NORTHERLY ISLAND,3
+processed_history,facility_type,NOT-FOR-PROFIT CLUB,8
+processed_history,facility_type,NURSING HOME,15
+processed_history,facility_type,NUTRITION SHAKES,5
+processed_history,facility_type,NUTRITION..SMOOTHIES/SHAKES,3
+processed_history,facility_type,OTHER,17
+processed_history,facility_type,OUTREACH CULINARY KITCHEN,12
+processed_history,facility_type,PACKAGED HEALTH FOODS,5
+processed_history,facility_type,PALETERIA,17
+processed_history,facility_type,PASTRY SCHOOL,11
+processed_history,facility_type,PHARMACY,1
+processed_history,facility_type,POP-UP ESTABLISHMENT HOST-TIER II,62
+processed_history,facility_type,POP-UP ESTABLISHMENT HOST-TIER III,12
+processed_history,facility_type,POP-UP FOOD ESTABLISHMENT USER-TIER I,1
+processed_history,facility_type,POP-UP FOOD ESTABLISHMENT USER-TIER II,17
+processed_history,facility_type,POPCORN CORN,4
+processed_history,facility_type,POULTRY SLAUGHTER,9
+processed_history,facility_type,PRE PACKAGED,3
+processed_history,facility_type,PREP INSIDE SCHOOL,3
+processed_history,facility_type,PREPACAKAGED FOODS,1
+processed_history,facility_type,PREPACKAGE MEAL DISTRIBUTOR (1006 RETAIL),1
+processed_history,facility_type,PRIVATE CLUB,3
+processed_history,facility_type,PRIVATE EVENT SPACE,2
+processed_history,facility_type,PRIVATE SCHOOL,99
+processed_history,facility_type,PUBLIC SHCOOL,16
+processed_history,facility_type,PUSH CARTS,3
+processed_history,facility_type,REGULATED BUSINESS,10
+processed_history,facility_type,REHAB CENTER,16
+processed_history,facility_type,REPACKAGING PLANT,1
+processed_history,facility_type,REST/GROCERY,3
+processed_history,facility_type,REST/GYM,4
+processed_history,facility_type,RESTAURANT,138442
+processed_history,facility_type,RESTAURANT AND LIQUOR,1
+processed_history,facility_type,RESTAURANT(PROTEIN SHAKE BAR),4
+processed_history,facility_type,RESTAURANT.BANQUET HALLS,4
+processed_history,facility_type,RESTAURANT/BAR,35
+processed_history,facility_type,RESTAURANT/BAR/THEATER,2
+processed_history,facility_type,RESTAURANT/GROCERY STORE,24
+processed_history,facility_type,RETAIL,4
+processed_history,facility_type,RETAIL FOOD,3
+processed_history,facility_type,RETAIL SALES,2
+processed_history,facility_type,RETAIL STORE OFFERS COOKING CLASSES,6
+processed_history,facility_type,RETAIL WINE/WINE BAR,2
+processed_history,facility_type,RIVERWALK,11
+processed_history,facility_type,ROOF TOP,18
+processed_history,facility_type,ROOF TOPS,20
+processed_history,facility_type,ROOFTOP,48
+processed_history,facility_type,ROOFTOPS,48
+processed_history,facility_type,ROOM SERVICE,1
+processed_history,facility_type,SCHOOL,12274
+processed_history,facility_type,SCHOOL CAFETERIA,6
+processed_history,facility_type,SENIOR DAY CARE,13
+processed_history,facility_type,SERVICE GAS STATION,1
+processed_history,facility_type,SHAKES/TEAS,3
+processed_history,facility_type,SHARED KITCHEN,300
+processed_history,facility_type,SHARED KITCHEN SUPPLEMENTAL,3
+processed_history,facility_type,SHARED KITCHEN USER (LONG TERM),345
+processed_history,facility_type,SHARED KITCHEN USER (SHORT TERM),16
+processed_history,facility_type,SHELTER,89
+processed_history,facility_type,SHUFFLEBOARD CLUB WITH BAR,3
+processed_history,facility_type,SLAUGHTER HOUSE/ GROCERY,6
+processed_history,facility_type,SMOKEHOUSE,1
+processed_history,facility_type,SMOOTHIE BAR,3
+processed_history,facility_type,SNACK SHOP,1
+processed_history,facility_type,SOCIAL CLUB,3
+processed_history,facility_type,SOUP KITCHEN AND PANTRY,2
+processed_history,facility_type,SPA,2
+processed_history,facility_type,SPECIAL EVENT,247
+processed_history,facility_type,STADIUM,42
+processed_history,facility_type,STORE,38
+processed_history,facility_type,SUIT STORE,2
+processed_history,facility_type,SUMMER FEEDING PREP AREA,2
+processed_history,facility_type,SUPPORTIVE LIVING,41
+processed_history,facility_type,SUSHI COUNTER,5
+processed_history,facility_type,TAP ROOM/TAVERN/LIQUOR STORE,1
+processed_history,facility_type,TAVERN,269
+processed_history,facility_type,TAVERN/BAR,1
+processed_history,facility_type,TAVERN/LIQUOR,2
+processed_history,facility_type,TAVERN/PACKAGED GOODS,2
+processed_history,facility_type,TEACHING SCHOOL,4
+processed_history,facility_type,TEST KITCHEN/ STORAGE,3
+processed_history,facility_type,THC INFUSED BAKERY,8
+processed_history,facility_type,THEATER,13
+processed_history,facility_type,THEATRE,13
+processed_history,facility_type,TOBACCO STORE,2
+processed_history,facility_type,TRUCK,2
+processed_history,facility_type,UNIVERSITY CAFETERIA,17
+processed_history,facility_type,UNKNOWN,1030
+processed_history,facility_type,UNLICENSED FACILITY,2
+processed_history,facility_type,UNUSED STORAGE,1
+processed_history,facility_type,VENDING COMMISSARY,11
+processed_history,facility_type,VENDING MACHINE,2
+processed_history,facility_type,VFW HALL,5
+processed_history,facility_type,WAREHOUSE,7
+processed_history,facility_type,WEIGHT LOSS PROGRAM,2
+processed_history,facility_type,WHOLESALE,109
+processed_history,facility_type,WHOLESALE & RETAIL,3
+processed_history,facility_type,WRIGLEY ROOF TOP,3
+processed_history,facility_type,WRIGLEY ROOFTOP,10
+processed_history,facility_type,YOUTH HOUSING,7
+processed_history,risk,ALL,76
+processed_history,risk,RISK 1 (HIGH),154544
+processed_history,risk,RISK 2 (MEDIUM),31717
+processed_history,risk,RISK 3 (LOW),11506
+processed_history,risk,UNKNOWN,39
+processed_history,inspection_type,ASSESSMENT,1
+processed_history,inspection_type,CANVASS,100958
+processed_history,inspection_type,CANVASS RE-INSPECTION,24362
+processed_history,inspection_type,COMPLAINT,19374
+processed_history,inspection_type,COMPLAINT RE-INSPECTION,8213
+processed_history,inspection_type,CONSULTATION,48
+processed_history,inspection_type,COVID COMPLAINT,1
+processed_history,inspection_type,FIRE,1
+processed_history,inspection_type,FIRE COMPLAINT,1
+processed_history,inspection_type,LICENSE,27005
+processed_history,inspection_type,LICENSE RE-INSPECTION,6757
+processed_history,inspection_type,NO ENTRY,1
+processed_history,inspection_type,NON-INSPECTION,5728
+processed_history,inspection_type,NOT READY,16
+processed_history,inspection_type,OUT OF BUSINESS,1
+processed_history,inspection_type,RECENT INSPECTION,414
+processed_history,inspection_type,SHORT FORM COMPLAINT,4485
+processed_history,inspection_type,SPECIAL EVENTS (FESTIVALS),8
+processed_history,inspection_type,SUSPECTED FOOD POISONING,413
+processed_history,inspection_type,SUSPECTED FOOD POISONING RE-INSPECTION,91
+processed_history,inspection_type,TAG REMOVAL,3
+processed_history,inspection_type,UNKNOWN,1
+processed_history,results,Business Not Located,42
+processed_history,results,Fail,37863
+processed_history,results,No Entry,11606
+processed_history,results,Not Ready,4377
+processed_history,results,Out of Business,14319
+processed_history,results,Pass,93378
+processed_history,results,Pass w/ Conditions,36297
+processed_history,city,,125
+processed_history,city,312CHICAGO,7
+processed_history,city,ALGONQUIN,1
+processed_history,city,AURORA,1
+processed_history,city,BALDWIN PARK,1
+processed_history,city,BERWYN,7
+processed_history,city,BOLINGBROOK,1
+processed_history,city,BRIDGEVIEW,4
+processed_history,city,BROOKFIELD,1
+processed_history,city,BURBANK,2
+processed_history,city,BURNHAM,1
+processed_history,city,CALUMET CITY,4
+processed_history,city,CAROL STREAM,2
+processed_history,city,CCHICAGO,35
+processed_history,city,CH,2
+processed_history,city,CHICAGO,197503
+processed_history,city,CHICAGO.,10
+processed_history,city,CHICAGOBEDFORD PARK,1
+processed_history,city,CHICAGOC,2
+processed_history,city,CHICAGOCHICAGO,9
+processed_history,city,CHICAGOO,11
+processed_history,city,CICERO,3
+processed_history,city,ELK GROVE VILLAGE,6
+processed_history,city,ELMHURST,4
+processed_history,city,EVANSTON,27
+processed_history,city,EVERGREEN,1
+processed_history,city,EVERGREEN PARK,1
+processed_history,city,GLEN ELLYN,1
+processed_history,city,GRAYSLAKE,1
+processed_history,city,GRIFFITH,1
+processed_history,city,HAMMOND,1
+processed_history,city,HIGHLAND PARK,4
+processed_history,city,INGLEWOOD,1
+processed_history,city,LAKE BLUFF,1
+processed_history,city,LAKE ZURICH,1
+processed_history,city,LANSING,1
+processed_history,city,LOS ANGELES,2
+processed_history,city,MAPLE PARK,1
+processed_history,city,MATTESON,1
+processed_history,city,MAYWOOD,3
+processed_history,city,MERRILLVILLE,1
+processed_history,city,MERRIVILLE,8
+processed_history,city,MORTON GROVE,1
+processed_history,city,MOUNT PROSPECT,1
+processed_history,city,NAPERVILLE,3
+processed_history,city,NEW HOLSTEIN,1
+processed_history,city,NEW YORK,1
+processed_history,city,NILES NILES,7
+processed_history,city,OAK LAWN,1
+processed_history,city,OAK PARK,10
+processed_history,city,ORLAND PARK,1
+processed_history,city,PALOS PARK,1
+processed_history,city,PLAINFIELD,5
+processed_history,city,RIPON,2
+processed_history,city,ROSEMONT,3
+processed_history,city,SCHAUMBURG,26
+processed_history,city,SCHILLER PARK,3
+processed_history,city,SKOKIE,6
+processed_history,city,SUMMIT,1
+processed_history,city,TORRANCE,2
+processed_history,city,WADSWORTH,1
+processed_history,city,WASHINGTON,1
+processed_history,city,WESTERN SPRINGS,1
+processed_history,city,WHEATON,1
+processed_history,city,WHITING,1
+processed_history,city,WILMETTE,1
+processed_history,city,ZION,1
+processed_history,state,,73
+processed_history,state,CA,6
+processed_history,state,CO,1
+processed_history,state,DC,1
+processed_history,state,IL,197784
+processed_history,state,IN,13
+processed_history,state,NY,1
+processed_history,state,WI,3

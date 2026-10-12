@@ -1,0 +1,23 @@
+{
+  "dataset_id": "4ijn-s7e5",
+  "history_start": "2016-01-01",
+  "history_cutoff": "2026-10-30",
+  "hidden_test_start": "2026-10-31",
+  "hidden_test_end": "2026-11-27",
+  "raw_csv": "data/raw/food_inspections.csv.gz",
+  "download_metadata": "data/raw/download_metadata.json",
+  "source_metadata": "data/raw/source_metadata.json",
+  "processed_history": "data/processed/inspections.csv.gz",
+  "labelled_data": "data/processed/labelled_inspections.csv.gz",
+  "label_map": {
+    "Fail": 1,
+    "Pass": 0,
+    "Pass w/ Conditions": 0
+  },
+  "excluded_results": [
+    "Out of Business",
+    "No Entry",
+    "Not Ready",
+    "Business Not Located"
+  ]
+}

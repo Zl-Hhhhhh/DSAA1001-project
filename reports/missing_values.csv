@@ -1,0 +1,41 @@
+table,column,missing_count,missing_percent
+raw,Inspection ID,0,0.0
+raw,DBA Name,0,0.0
+raw,AKA Name,500,0.252676
+raw,License #,7,0.003537
+raw,Facility Type,1030,0.520512
+raw,Risk,39,0.019709
+raw,Address,1,0.000505
+raw,City,125,0.063169
+raw,State,73,0.036891
+raw,Zip,12,0.006064
+raw,Inspection Date,0,0.0
+raw,Inspection Type,1,0.000505
+raw,Results,0,0.0
+raw,Violations,56409,28.506383
+raw,Latitude,689,0.348187
+raw,Longitude,689,0.348187
+raw,Location,689,0.348187
+processed_history,inspection_id,0,0.0
+processed_history,dba_name,0,0.0
+processed_history,aka_name,500,0.252676
+processed_history,license_number,468,0.236505
+processed_history,facility_type,0,0.0
+processed_history,risk,0,0.0
+processed_history,address,1,0.000505
+processed_history,city,125,0.063169
+processed_history,state,73,0.036891
+processed_history,zip,12,0.006064
+processed_history,inspection_date,0,0.0
+processed_history,inspection_type,0,0.0
+processed_history,results,0,0.0
+processed_history,violations,56409,28.506383
+processed_history,latitude,689,0.348187
+processed_history,longitude,689,0.348187
+processed_history,location,689,0.348187
+processed_history,risk_level,115,0.058115
+processed_history,establishment_key,0,0.0
+processed_history,inspection_year,0,0.0
+processed_history,inspection_month,0,0.0
+processed_history,inspection_weekday,0,0.0
+processed_history,label,30344,15.334391

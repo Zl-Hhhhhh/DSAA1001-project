@@ -1,0 +1,318 @@
+{
+  "preparation_version": 1,
+  "source": {
+    "dataset_name": "Food Inspections",
+    "dataset_id": "4ijn-s7e5",
+    "portal_page": "https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5",
+    "api_endpoint": "https://data.cityofchicago.org/resource/4ijn-s7e5.json",
+    "download_started_at_utc": "2026-10-12T07:53:44+00:00",
+    "downloaded_at_utc": "2026-10-12T07:59:09+00:00",
+    "portal_rows_updated_at_utc": "2026-10-11T09:06:02+00:00",
+    "requested_window": {
+      "start_date": "2016-01-01",
+      "end_date": "2026-10-12"
+    },
+    "project_history_cutoff": "2026-10-30",
+    "actual_date_range": {
+      "start_date": "2016-01-04",
+      "end_date": "2026-10-09"
+    },
+    "row_count": 197882,
+    "api_expected_row_count": 197882,
+    "maximum_inspection_id": 2644042,
+    "columns": [
+      "Inspection ID",
+      "DBA Name",
+      "AKA Name",
+      "License #",
+      "Facility Type",
+      "Risk",
+      "Address",
+      "City",
+      "State",
+      "Zip",
+      "Inspection Date",
+      "Inspection Type",
+      "Results",
+      "Violations",
+      "Latitude",
+      "Longitude",
+      "Location"
+    ],
+    "csv_file": "food_inspections.csv.gz",
+    "csv_sha256": "ada2d52b0ac2a782a1964160131e0d3d0d429f2bdc4c9dcd4fb7064660c3b46b",
+    "csv_size_bytes": 46779166,
+    "query_filter": "inspection_date >= '2016-01-01T00:00:00' AND inspection_date < '2026-10-13T00:00:00'",
+    "pagination": "inspection_id keyset, ascending, bounded by initial maximum ID",
+    "compression": "gzip; portal CSV field names and MM/DD/YYYY inspection dates",
+    "snapshot_note": "Observed public data at download time, not proof of complete reporting through the requested end date."
+  },
+  "raw_rows": 197882,
+  "history_rows": 197882,
+  "labelled_rows": 167538,
+  "unlabelled_rows": 30344,
+  "class_counts": {
+    "0": 129675,
+    "1": 37863
+  },
+  "fail_rate_percent": 22.599649034845825,
+  "date_range": {
+    "start": "2016-01-04",
+    "end": "2026-10-09"
+  },
+  "duplicate_id_rows": 0,
+  "exact_duplicate_rows_removed": 0,
+  "establishment_groups": 32930,
+  "repeated_establishment_groups": 25757,
+  "licenses_with_multiple_addresses": 180,
+  "same_day_multiple_inspection_groups": 1371,
+  "same_day_conflicting_label_groups": 57,
+  "normalization_counts": {
+    "raw_rows": 197882,
+    "history_rows": 197882,
+    "missing_or_invalid_license": 468,
+    "zero_license": 461,
+    "fallback_identity": 468
+  },
+  "result_counts": {
+    "Out of Business": 14319,
+    "Pass": 93378,
+    "Fail": 37863,
+    "Pass w/ Conditions": 36297,
+    "No Entry": 11606,
+    "Not Ready": 4377,
+    "Business Not Located": 42
+  },
+  "raw_missing": {
+    "Inspection ID": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "DBA Name": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "AKA Name": {
+      "count": 500,
+      "percent": 0.2526758371150484
+    },
+    "License #": {
+      "count": 7,
+      "percent": 0.003537461719610677
+    },
+    "Facility Type": {
+      "count": 1030,
+      "percent": 0.5205122244569996
+    },
+    "Risk": {
+      "count": 39,
+      "percent": 0.019708715294973773
+    },
+    "Address": {
+      "count": 1,
+      "percent": 0.0005053516742300967
+    },
+    "City": {
+      "count": 125,
+      "percent": 0.0631689592787621
+    },
+    "State": {
+      "count": 73,
+      "percent": 0.03689067221879706
+    },
+    "Zip": {
+      "count": 12,
+      "percent": 0.006064220090761161
+    },
+    "Inspection Date": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "Inspection Type": {
+      "count": 1,
+      "percent": 0.0005053516742300967
+    },
+    "Results": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "Violations": {
+      "count": 56409,
+      "percent": 28.506382591645526
+    },
+    "Latitude": {
+      "count": 689,
+      "percent": 0.34818730354453664
+    },
+    "Longitude": {
+      "count": 689,
+      "percent": 0.34818730354453664
+    },
+    "Location": {
+      "count": 689,
+      "percent": 0.34818730354453664
+    }
+  },
+  "processed_missing": {
+    "inspection_id": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "dba_name": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "aka_name": {
+      "count": 500,
+      "percent": 0.2526758371150484
+    },
+    "license_number": {
+      "count": 468,
+      "percent": 0.23650458353968526
+    },
+    "facility_type": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "risk": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "address": {
+      "count": 1,
+      "percent": 0.0005053516742300967
+    },
+    "city": {
+      "count": 125,
+      "percent": 0.0631689592787621
+    },
+    "state": {
+      "count": 73,
+      "percent": 0.03689067221879706
+    },
+    "zip": {
+      "count": 12,
+      "percent": 0.006064220090761161
+    },
+    "inspection_date": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "inspection_type": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "results": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "violations": {
+      "count": 56409,
+      "percent": 28.506382591645526
+    },
+    "latitude": {
+      "count": 689,
+      "percent": 0.34818730354453664
+    },
+    "longitude": {
+      "count": 689,
+      "percent": 0.34818730354453664
+    },
+    "location": {
+      "count": 689,
+      "percent": 0.34818730354453664
+    },
+    "risk_level": {
+      "count": 115,
+      "percent": 0.05811544253646112
+    },
+    "establishment_key": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "inspection_year": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "inspection_month": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "inspection_weekday": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "label": {
+      "count": 30344,
+      "percent": 15.334391202838056
+    }
+  },
+  "category_cardinality": {
+    "Facility Type": {
+      "raw": 369,
+      "normalized": 337
+    },
+    "Risk": {
+      "raw": 5,
+      "normalized": 5
+    },
+    "Inspection Type": {
+      "raw": 23,
+      "normalized": 22
+    },
+    "Results": {
+      "raw": 7,
+      "normalized": 7
+    },
+    "City": {
+      "raw": 70,
+      "normalized": 67
+    },
+    "State": {
+      "raw": 8,
+      "normalized": 8
+    }
+  },
+  "default_feature_columns": [
+    "facility_type",
+    "risk",
+    "risk_level",
+    "inspection_type",
+    "city",
+    "state",
+    "zip",
+    "latitude",
+    "longitude",
+    "inspection_year",
+    "inspection_month",
+    "inspection_weekday"
+  ],
+  "labelled_columns": [
+    "inspection_id",
+    "dba_name",
+    "aka_name",
+    "license_number",
+    "facility_type",
+    "risk",
+    "address",
+    "city",
+    "state",
+    "zip",
+    "inspection_date",
+    "inspection_type",
+    "latitude",
+    "longitude",
+    "risk_level",
+    "establishment_key",
+    "inspection_year",
+    "inspection_month",
+    "inspection_weekday",
+    "label"
+  ],
+  "identity_rule": "Valid licence first; otherwise hash of name/address/city/state/ZIP; otherwise inspection-specific key.",
+  "history_rule": "Only strictly earlier dates may contribute outcomes to later-inspection features; same-day ordering is unknown.",
+  "ordering": {
+    "history": "saved raw input order",
+    "labelled": "inspection_date ascending, numeric inspection_id ascending"
+  }
+}

@@ -1,0 +1,16 @@
+# Local environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Interrupted downloads and local execution logs
+*.partial
+*.log
+tmp/
+
+# Inputs and preparation reports are intentionally NOT ignored:
+# the teaching team must be able to run offline from a fresh clone.

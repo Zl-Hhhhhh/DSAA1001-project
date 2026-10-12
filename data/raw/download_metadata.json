@@ -1,0 +1,47 @@
+{
+  "dataset_name": "Food Inspections",
+  "dataset_id": "4ijn-s7e5",
+  "portal_page": "https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5",
+  "api_endpoint": "https://data.cityofchicago.org/resource/4ijn-s7e5.json",
+  "download_started_at_utc": "2026-10-12T07:53:44+00:00",
+  "downloaded_at_utc": "2026-10-12T07:59:09+00:00",
+  "portal_rows_updated_at_utc": "2026-10-11T09:06:02+00:00",
+  "requested_window": {
+    "start_date": "2016-01-01",
+    "end_date": "2026-10-12"
+  },
+  "project_history_cutoff": "2026-10-30",
+  "actual_date_range": {
+    "start_date": "2016-01-04",
+    "end_date": "2026-10-09"
+  },
+  "row_count": 197882,
+  "api_expected_row_count": 197882,
+  "maximum_inspection_id": 2644042,
+  "columns": [
+    "Inspection ID",
+    "DBA Name",
+    "AKA Name",
+    "License #",
+    "Facility Type",
+    "Risk",
+    "Address",
+    "City",
+    "State",
+    "Zip",
+    "Inspection Date",
+    "Inspection Type",
+    "Results",
+    "Violations",
+    "Latitude",
+    "Longitude",
+    "Location"
+  ],
+  "csv_file": "food_inspections.csv.gz",
+  "csv_sha256": "ada2d52b0ac2a782a1964160131e0d3d0d429f2bdc4c9dcd4fb7064660c3b46b",
+  "csv_size_bytes": 46779166,
+  "query_filter": "inspection_date >= '2016-01-01T00:00:00' AND inspection_date < '2026-10-13T00:00:00'",
+  "pagination": "inspection_id keyset, ascending, bounded by initial maximum ID",
+  "compression": "gzip; portal CSV field names and MM/DD/YYYY inspection dates",
+  "snapshot_note": "Observed public data at download time, not proof of complete reporting through the requested end date."
+}

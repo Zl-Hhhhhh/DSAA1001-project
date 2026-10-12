@@ -1,0 +1,24 @@
+column,role,available_before_current_inspection,rule
+inspection_id,metadata,yes,"Identifier, not a continuous numeric feature."
+dba_name,metadata,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+aka_name,metadata,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+license_number,metadata,yes,"Identifier, not a continuous numeric feature."
+facility_type,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+risk,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+address,metadata,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+city,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+state,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+zip,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+inspection_date,metadata,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+inspection_type,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+results,history_only_outcome,no,Current value is forbidden as input; strictly earlier inspection values may be used as history.
+violations,history_only_outcome,no,Current value is forbidden as input; strictly earlier inspection values may be used as history.
+latitude,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+longitude,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+location,metadata,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+risk_level,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+establishment_key,grouping_key,yes,"Preliminary identity; licence reuse, changed addresses and fallback matching need review."
+inspection_year,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+inspection_month,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+inspection_weekday,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
+label,target,no,Fail=1; Pass and Pass w/ Conditions=0; other outcomes have no label.

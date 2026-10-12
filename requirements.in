@@ -1,0 +1,10 @@
+# Data downloading and preparation use only the Python standard library.
+# These packages support the provided notebooks and later modelling.
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+nbformat
+nbclient
+ipykernel

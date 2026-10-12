@@ -1,0 +1,6 @@
+# Keep source line endings stable across fresh checkouts.
+* text=auto eol=lf
+# Preserve exact snapshot/report bytes used by the SHA-256 manifest.
+*.csv -text
+*.csv.gz binary
+*.pdf binary
