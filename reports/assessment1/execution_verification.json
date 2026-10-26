@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-22T04:30:34+00:00",
+  "run_all": "passed in a clean source/raw-data copy",
+  "network_guard": "Python HTTP and non-loopback socket connections rejected; local Jupyter communication allowed",
+  "prepared_data_required": false,
+  "source_raw_sha256": "ada2d52b0ac2a782a1964160131e0d3d0d429f2bdc4c9dcd4fb7064660c3b46b",
+  "notebook_source_sha256": "6fb8f8fb690a37351131bc8bb342d63dea026b69dcbb7bbc7c2414dc7db2692d",
+  "code_cells_executed": 13,
+  "embedded_figures": 8,
+  "supporting_tables_reproduced": 22,
+  "independent_raw_label_audit": "passed",
+  "unit_tests_passed": 13,
+  "local_test_outcome_analysis": "not performed",
+  "input_code_sha256": {
+    "config/data.json": "bfebffb981def2f875f25dfb00656d8ce2789ab6fefe5aab725cb3be4a3c96a1",
+    "config/assessment1.json": "030156f2de6fdd2fee659442b4c647442cf40347598267a149fc64fa8905576e",
+    "scripts/prepare_data.py": "5529cab99d55d795675e88b59c30f689daa7b974503be84a941a0c8e25f814e8",
+    "scripts/ass1_utils.py": "ab0ba8cf59c9cdbabeda5bf05c5df168822584376206ac081897fad4bcc83ff2",
+    "scripts/run_assessment1.py": "a5da974d81148232f5b943cd7c206e33917f43900732b222f61536c14ae23c9b",
+    "data/raw/download_metadata.json": "1358e56a16129c2ffe9f9b42e0d2a486ff9fe97aaddcf0a44e0499e8340cf1c7"
+  }
+}

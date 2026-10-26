@@ -1,0 +1,13 @@
+item,value
+Dataset,4ijn-s7e5
+Source,https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5
+"Download time, UTC",2026-10-12T07:59:09+00:00
+Requested window,2016-01-01 to 2026-10-12
+Actual inspection range,2016-01-04 to 2026-10-09
+Full snapshot rows,197882
+"EDA rows, 2016-2025",185270
+Labelled EDA rows,156822
+EDA records without binary judgement,28448
+Repeated raw Inspection IDs,0
+Fully duplicated raw rows,0
+"SHA-256, compressed raw CSV",ada2d52b0ac2a782a1964160131e0d3d0d429f2bdc4c9dcd4fb7064660c3b46b

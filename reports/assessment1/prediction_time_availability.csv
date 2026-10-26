@@ -1,0 +1,9 @@
+field_or_feature,known_before_visit,role,rule
+Facility type / Risk / Inspection type,Conditional,Candidate,Use only the values supplied or known before the visit; no current-result-derived substitutions.
+ZIP / coordinates / scheduled calendar fields,Conditional,Candidate,Validate availability; handle missing/unseen values using training-only processing.
+Inspection ID / licence / names / address,Conditional,Metadata and grouping,Match records and build provisional identities; omit raw IDs and names from the initial classifier.
+Strictly earlier visit and outcome history,Conditional,Candidate improvement,Use only earlier dates and labels already available at the batch cutoff.
+Current Results / label,No,Target only,Never include as a predictor.
+Current Violations and its missingness flag,No,Audit only,Both are produced by the current inspection.
+Full-period visit totals,No,Descriptive only,They include visits after the row being predicted.
+Hidden-test outcomes,No,Forbidden input,Do not query the portal or use hidden outcomes for any feature or tuning.
