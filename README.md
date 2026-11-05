@@ -7,7 +7,7 @@
 
 ~~~text
 DSAA1001-project/
-├── config/data.json                  # 数据范围、标签定义及固定文件路径
+├── config/                           # 数据范围、标签定义与 Assi1 时间划分
 ├── data/
 │   ├── raw/                          # 原始 CSV.gz、下载记录、官方元数据；应提交
 │   ├── processed/                    # 清洗历史表、带标签表、校验清单；应提交
@@ -15,10 +15,13 @@ DSAA1001-project/
 ├── docs/                             # 课程 PDF
 ├── notebooks/
 │   ├── 00_data_preparation.ipynb      # 离线数据准备及核查
+│   ├── 01_assessment1_eda.ipynb       # Assi1 主提交：8 组图、质量分析、建模计划
 │   └── examples/01_example_eda.ipynb  # 已适配目录的课程示例；不是完整作业
 ├── scripts/
 │   ├── download_data.py               # 联网下载，默认整个允许的历史范围
-│   └── prepare_data.py                # 离线清洗、标签、质量报告和校验
+│   ├── prepare_data.py                # 离线清洗、标签、质量报告和校验
+│   ├── ass1_utils.py                  # Assi1 读取、统计与严格历史特征
+│   └── run_assessment1.py              # 执行并保存 Assi1 Notebook 输出
 ├── tests/                            # 数据边界及泄漏防护测试
 ├── reports/                          # 质量报告、字段可用性、统计及 figures/
 ├── outputs/                          # 后续 predictions.csv 等输出
@@ -33,10 +36,10 @@ DSAA1001-project/
 
 已有原始快照时，以下命令均无需联网：
 
-~~~bash
+~~~powershell
 python scripts/prepare_data.py
 python scripts/prepare_data.py --check
-python -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ~~~
 
 运行 Notebook 前创建环境并安装依赖；这些步骤需要联网，属于环境安装，
@@ -116,6 +119,23 @@ python scripts/download_data.py --overwrite
 - data/test/ 仅接受教学团队提供的输入；不查询隐藏测试期结果。
 - 所有项目输入、数据来源说明及必要输出应加入 Git；不要忽略整个 data/。
 
+## Assessment 1
+
+主提交文件为 [01_assessment1_eda.ipynb](notebooks/01_assessment1_eda.ipynb)，使用英文撰写。
+其中包含 8 组探索图、12 项有证据的数据质量分析、字段可用性审计和约一页建模计划。
+建模计划已完整嵌入 Notebook，另有 [Markdown 参考版](docs/assessment1_modelling_plan.md)。
+
+在项目 .venv 环境中直接 Run All，或从仓库根目录执行：
+
+~~~powershell
+.\.venv\Scripts\python.exe scripts/run_assessment1.py
+~~~
+
+图表保存在 reports/figures/assessment1/，支持统计表保存在 reports/assessment1/。
+本次 Assi1 固定使用 2026-10-12 下载的快照。更新原始快照后，需要重新核查分析文字；
+Notebook 会校验快照哈希，避免新数据与旧结论混用。
+结果分析仅使用 2016-2025 年；2026 年用于后续本地留出评估，本次仅统计其记录数量和店铺重叠。
+
 ## 课程提交
 
 | 阶段 | 截止时间 | 提交 |
@@ -123,5 +143,4 @@ python scripts/download_data.py --overwrite
 | Assessment 1 | 2026-10-30 23:59 | EDA Notebook、数据质量分析、约一页建模计划 |
 | Assessment 2 | 2026-12-04 23:59 | 最终 Notebook、predictions.csv、现场展示或视频 |
 
-当前完成目录整理与数据准备，尚未完成完整 EDA、建模计划、模型训练、
-最终分析简报或隐藏测试预测。
+Assessment 1 的 EDA、数据质量分析和建模计划已完成，后续按该计划开展 Assessment 2。

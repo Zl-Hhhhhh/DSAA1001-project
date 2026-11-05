@@ -1,0 +1,12 @@
+{
+  "development_end": "2025-12-31",
+  "train_end": "2024-12-31",
+  "validation_start": "2025-01-01",
+  "validation_end": "2025-12-31",
+  "local_test_start": "2026-01-01",
+  "local_test_end": "2026-09-30",
+  "tail_start": "2026-10-01",
+  "minimum_zip_count": 500,
+  "random_seed": 1001,
+  "snapshot_sha256": "ada2d52b0ac2a782a1964160131e0d3d0d429f2bdc4c9dcd4fb7064660c3b46b"
+}

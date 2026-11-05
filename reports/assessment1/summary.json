@@ -1,0 +1,73 @@
+{
+  "snapshot_sha256": "ada2d52b0ac2a782a1964160131e0d3d0d429f2bdc4c9dcd4fb7064660c3b46b",
+  "source_downloaded_at_utc": "2026-10-12T07:59:09+00:00",
+  "actual_full_snapshot_range": [
+    "2016-01-04",
+    "2026-10-09"
+  ],
+  "development_end": "2025-12-31",
+  "raw_rows": 197882,
+  "development_rows": 185270,
+  "labelled_development_rows": 156822,
+  "development_failures": 35580,
+  "development_fail_rate": 0.22688143245207942,
+  "development_history_only_rows": 28448,
+  "constant_nonfail_development_macro_f1": 0.43602192301052994,
+  "same_day_conflicting_groups": 57,
+  "previous_outcome_all": {
+    "No earlier judgement": {
+      "n": 29101,
+      "failures": 8528,
+      "rate": 0.2930483488539913
+    },
+    "Previous non-Fail": {
+      "n": 92645,
+      "failures": 23021,
+      "rate": 0.24848615683523126
+    },
+    "Previous Fail": {
+      "n": 35035,
+      "failures": 4023,
+      "rate": 0.1148280291137434
+    },
+    "Mixed previous date": {
+      "n": 41,
+      "failures": 8,
+      "rate": 0.1951219512195122
+    }
+  },
+  "previous_outcome_canvass": {
+    "No earlier judgement": {
+      "n": 10253,
+      "failures": 2685,
+      "rate": 0.2618745732956208
+    },
+    "Previous non-Fail": {
+      "n": 67456,
+      "failures": 16251,
+      "rate": 0.24091259487666034
+    },
+    "Previous Fail": {
+      "n": 442,
+      "failures": 126,
+      "rate": 0.2850678733031674
+    },
+    "Mixed previous date": {
+      "n": 25,
+      "failures": 6,
+      "rate": 0.24
+    }
+  },
+  "figure_files": [
+    "01_outcomes_and_labels.png",
+    "02_time_volume_and_rates.png",
+    "03_missingness_and_leakage.png",
+    "04_facilities_and_risk.png",
+    "05_inspection_purpose_and_eligibility.png",
+    "06_zip_comparison.png",
+    "07_repeats_and_prior_outcome.png",
+    "08_time_split_and_establishment_overlap.png"
+  ],
+  "local_test_outcome_analysis": "not performed",
+  "model_training": "not performed; Assessment 1 modelling plan only"
+}

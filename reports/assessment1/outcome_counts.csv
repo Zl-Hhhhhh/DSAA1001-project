@@ -1,0 +1,8 @@
+results,rows,use
+Pass,86510,label 0
+Fail,35580,label 1
+Pass w/ Conditions,34732,label 0
+Out of Business,13635,history only
+No Entry,10818,history only
+Not Ready,3955,history only
+Business Not Located,40,history only

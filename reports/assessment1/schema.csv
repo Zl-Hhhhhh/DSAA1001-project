@@ -1,0 +1,18 @@
+raw_field,raw_dtype,clean_field,clean_dtype
+Inspection ID,string,inspection_id,str
+DBA Name,string,dba_name,str
+AKA Name,string,aka_name,str
+License #,string,license_number,str
+Facility Type,string,facility_type,str
+Risk,string,risk,str
+Address,string,address,str
+City,string,city,str
+State,string,state,str
+Zip,string,zip,str
+Inspection Date,string,inspection_date,datetime64[us]
+Inspection Type,string,inspection_type,str
+Results,string,results,str
+Violations,string,violations,excluded from candidate inputs
+Latitude,string,latitude,float64
+Longitude,string,longitude,float64
+Location,string,location,excluded from candidate inputs
