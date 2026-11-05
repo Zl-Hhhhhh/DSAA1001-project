@@ -136,6 +136,11 @@ python scripts/download_data.py --overwrite
 Notebook 会校验快照哈希，避免新数据与旧结论混用。
 结果分析仅使用 2016-2025 年；2026 年用于后续本地留出评估，本次仅统计其记录数量和店铺重叠。
 
+## Assessment 2
+
+离线核查现有数据：`.\.venv\Scripts\python.exe scripts/ass2_audit_data.py`。
+结果直接在终端显示，固定数据版本见 [assessment2_data.json](config/assessment2_data.json)。
+
 ## 课程提交
 
 | 阶段 | 截止时间 | 提交 |

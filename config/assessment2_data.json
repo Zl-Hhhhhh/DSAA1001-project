@@ -1,0 +1,11 @@
+{
+  "version_name": "chicago-food-inspections_2026-10-12",
+  "dataset_id": "4ijn-s7e5",
+  "raw_sha256": "ada2d52b0ac2a782a1964160131e0d3d0d429f2bdc4c9dcd4fb7064660c3b46b",
+  "downloaded_at_utc": "2026-10-12T07:59:09+00:00",
+  "row_count": 197882,
+  "actual_date_range": {
+    "start": "2016-01-04",
+    "end": "2026-10-09"
+  }
+}
