@@ -141,6 +141,52 @@ Notebook 会校验快照哈希，避免新数据与旧结论混用。
 离线核查现有数据：`.\.venv\Scripts\python.exe scripts/ass2_audit_data.py`。
 结果直接在终端显示，固定数据版本见 [assessment2_data.json](config/assessment2_data.json)。
 
+基础与历史特征接口在 [ass2_features.py](scripts/ass2_features.py)。执行
+`.\.venv\Scripts\python.exe scripts/ass2_features.py` 可在内存中构造训练期、验证期特征，
+并比较两种店铺匹配方式；结果只显示在终端。
+
+从仓库根目录调用：
+
+~~~python
+import sys
+sys.path.insert(0, "scripts")
+from ass2_features import load_history, build_features
+
+history = load_history()
+train_rows = history.loc[history.inspection_date.le("2024-12-31")]
+valid_rows = history.loc[history.inspection_date.between("2025-01-01", "2025-12-31")]
+
+train = build_features(train_rows, history=train_rows, identity="license")
+valid = build_features(
+    valid_rows, history=train_rows, batch_start="2025-01-01", identity="license"
+)
+# 先用全部访问构造历史，再筛选有标签的行用于训练或评分。
+keep = train.y.notna()
+X_train, y_train = train.X.loc[keep], train.y.loc[keep]
+~~~
+
+返回值包含 `X`（模型特征）、`y`（可为0或1或空的标签）和 `meta`（ID、日期、店铺键、历史截止时间及已知店铺标记）。
+三者按输入行顺序对齐，并重置索引。验证数据同样用 `valid.y.notna()` 筛选评分行。
+接口同时接受原始字段名和清洗字段名；预测输入可以没有 Results、Violations 或 label。
+
+| 特征(`X`) | 字段与含义 |
+|---|---|
+| 基础类别 | facility_type、risk、inspection_type、zip、inspection_month、inspection_weekday；月份和星期作为类别，星期一为 0 |
+| 基础数值 | latitude、longitude；缺失或非法坐标保留为 NaN，留给训练流程处理 |
+| 历史次数 | prior_visits、prior_judgements、prior_failures；分别为此前访问数、有效判断数和失败数 |
+| 历史失败比例 | prior_fail_rate = prior_failures / prior_judgements；没有有效判断时为 NaN |
+| 最近结果 | previous_outcome：最近有判断日期的非 Fail、Fail、同日混合结果或没有此前判断 |
+
+默认得到 8 个基础特征和 5 个历史特征。`include_history=False` 仅返回基础特征。
+`identity="license_address"` 可切换为许可证加地址分组，地址匹配同时考虑城市、州和 ZIP；
+有效许可证缺少地址时使用单条检查键，不把缺失地址统一合并。
+没有有效许可证时，沿用名称和地址等信息的回退规则。
+
+训练行只使用更早日期的历史。验证或预测必须传入 `history` 和 `batch_start`，
+批次开始当天及之后的访问和结果全部排除。
+无判断访问增加 prior_visits，但不进入失败比例分母，也不覆盖最近有效结果。
+当前结果、违规文本、ID 和原始名称不进入 `X`；编码、填补和缩放由 B 在训练折内拟合。
+
 ## 课程提交
 
 | 阶段 | 截止时间 | 提交 |
