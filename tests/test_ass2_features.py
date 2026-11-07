@@ -197,6 +197,97 @@ class FeatureTests(unittest.TestCase):
                         self.assertAlmostEqual(result.X.loc[i, "prior_fail_rate"], float(judged.label.mean()))
                     self.assertEqual(result.X.loc[i, "previous_outcome"], expected)
 
+    def test_prediction_entry_ignores_all_current_outcome_columns(self):
+        import ass2_features as features
+        frame = self.frame()
+        targets = frame.iloc[[4, 1]].copy()
+        targets["results"] = "UNAVAILABLE CURRENT OUTCOME"
+        targets["violations"] = "unavailable text"
+        targets["violations_missing"] = False
+        expected = build_features(
+            targets.drop(columns=["label", "results", "violations", "violations_missing"]),
+            history=frame, batch_start="2020-01-02",
+        )
+        for identity in ["license", "license_address"]:
+            predicted = features.build_prediction_features(
+                targets, history=frame, batch_start="2020-01-02", identity=identity,
+            )
+            clean = features.build_prediction_features(
+                targets.drop(columns=["label", "results", "violations", "violations_missing"]),
+                history=frame, batch_start="2020-01-02", identity=identity,
+            )
+            pd.testing.assert_frame_equal(predicted.X, clean.X)
+            pd.testing.assert_frame_equal(predicted.meta, clean.meta)
+            self.assertTrue(predicted.y.isna().all())
+        pd.testing.assert_frame_equal(
+            expected.X, features.build_prediction_features(
+                targets, history=frame, batch_start="2020-01-02"
+            ).X
+        )
+
+    def test_post_cutoff_history_is_discarded_before_label_or_id_validation(self):
+        frame = self.frame()
+        target = frame.iloc[[4]].drop(columns="label")
+        expected = build_features(target, history=frame, batch_start="2020-01-02")
+        modified = frame.copy()
+        modified["label"] = modified.label.astype(object)
+        future = modified.inspection_date.ge("2020-01-02")
+        modified.loc[future, "label"] = "MUST NOT READ"
+        modified.loc[future, "inspection_id"] = "REPEATED INVALID FUTURE ID"
+        actual = build_features(target, history=modified, batch_start="2020-01-02")
+        pd.testing.assert_frame_equal(expected.X, actual.X)
+        pd.testing.assert_frame_equal(expected.meta, actual.meta)
+
+    def test_nonempty_history_needs_an_explicit_outcome_column(self):
+        frame = self.frame()
+        with self.assertRaisesRegex(ValueError, "history.*label|history.*Results"):
+            build_features(frame.iloc[[4]], history=frame.drop(columns="label"),
+                           batch_start="2020-01-02")
+
+    def test_own_training_result_never_changes_own_features(self):
+        frame = self.frame()
+        expected = build_features(frame.iloc[[0]], history=frame)
+        changed = frame.copy()
+        changed.loc[0, "label"] = 0
+        actual = build_features(changed.iloc[[0]], history=changed)
+        pd.testing.assert_frame_equal(expected.X, actual.X)
+
+    def test_prediction_batch_does_not_learn_from_other_prediction_rows(self):
+        import ass2_features as features
+        frame = self.frame()
+        first = frame.iloc[[0]].assign(inspection_id="101", inspection_date="2026-10-31")
+        second = frame.iloc[[0]].assign(inspection_id="102", inspection_date="2026-11-05")
+        combined = features.build_prediction_features(
+            pd.concat([first, second], ignore_index=True),
+            history=frame, batch_start="2026-10-31",
+        )
+        alone = features.build_prediction_features(
+            second, history=frame, batch_start="2026-10-31",
+        )
+        pd.testing.assert_series_equal(combined.X.iloc[1], alone.X.iloc[0], check_names=False)
+        self.assertEqual(combined.meta.inspection_id.tolist(), ["101", "102"])
+
+    def test_prediction_requires_start_and_history_and_preserves_raw_ids(self):
+        import ass2_features as features
+        frame = self.frame()
+        target = frame.iloc[[0]].drop(columns="label").rename(
+            columns={clean: raw for raw, clean in RAW_TO_CLEAN.items()}
+        )
+        target["Inspection ID"] = "101"
+        target["Inspection Date"] = "10/31/2026"
+        target["Results"] = "MUST IGNORE"
+        target["Violations"] = "MUST IGNORE"
+        with self.assertRaises(TypeError):
+            features.build_prediction_features(target, history=frame)
+        result = features.build_prediction_features(
+            target, history=frame, batch_start="2026-10-31",
+        )
+        self.assertEqual(result.meta.inspection_id.tolist(), ["101"])
+        self.assertTrue(result.y.isna().all())
+        forbidden = {"results", "Results", "label", "Violations", "violations",
+                     "violations_missing", "inspection_id", "establishment_key"}
+        self.assertFalse(forbidden.intersection(result.X.columns))
+
     def test_empty_targets_and_same_day_datetime_are_handled(self):
         frame = self.frame()
         result = build_features(frame.iloc[:0], history=frame)

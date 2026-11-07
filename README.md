@@ -16,12 +16,14 @@ DSAA1001-project/
 ├── notebooks/
 │   ├── 00_data_preparation.ipynb      # 离线数据准备及核查
 │   ├── 01_assessment1_eda.ipynb       # Assi1 主提交：8 组图、质量分析、建模计划
-│   └── examples/01_example_eda.ipynb  # 已适配目录的课程示例；不是完整作业
+│   └── examples/01_example_eda.ipynb  # 课程 EDA 示例
 ├── scripts/
 │   ├── download_data.py               # 联网下载，默认整个允许的历史范围
 │   ├── prepare_data.py                # 离线清洗、标签、质量报告和校验
 │   ├── ass1_utils.py                  # Assi1 读取、统计与严格历史特征
-│   └── run_assessment1.py              # 执行并保存 Assi1 Notebook 输出
+│   ├── run_assessment1.py              # 执行并保存 Assi1 Notebook 输出
+│   ├── ass2_audit_data.py              # 核查固定快照及全部历史记录
+│   └── ass2_features.py                # 生成基础、历史和预测特征
 ├── tests/                            # 数据边界及泄漏防护测试
 ├── reports/                          # 质量报告、字段可用性、统计及 figures/
 ├── outputs/                          # 后续 predictions.csv 等输出
@@ -32,7 +34,7 @@ DSAA1001-project/
 
 ## 运行
 
-建议 Python 3.13；下载和准备脚本仅使用标准库，不依赖 pandas。
+建议 Python 3.13；下载和准备脚本仅使用标准库。
 
 已有原始快照时，以下命令均无需联网：
 
@@ -42,8 +44,7 @@ python scripts/prepare_data.py --check
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ~~~
 
-运行 Notebook 前创建环境并安装依赖；这些步骤需要联网，属于环境安装，
-Notebook 自身的 Run All 不会下载数据或安装依赖：
+先联网创建环境并安装依赖，再使用保存的数据离线运行 Notebook：
 
 ~~~powershell
 py -3.13 -m venv .venv
@@ -78,7 +79,7 @@ python scripts/download_data.py --overwrite
 - 标签 0：**129,675**；标签 1：**37,863**（Fail 占有标签记录 **22.60%**）。
 - 重复 Inspection ID：0；完全重复并移除：0。
 - 多次检查的初步店铺分组：25,757。
-- 请求截止日期不代表数据已完整上报；此快照不包含尚未公开的记录，不能称为截至 10 月 30 日的完整数据。
+- 快照反映下载时已公开的记录，实际覆盖范围以上述检查日期为准；记录仍可能存在上报延迟。
 
 原始字段缺失率（空值或仅空白字符）：
 
@@ -107,17 +108,14 @@ python scripts/download_data.py --overwrite
 ## 数据使用约定
 
 - raw/ 保留全部原始字段，processed/inspections.csv.gz 是含结果的历史分析表。
-- labelled_inspections.csv.gz 只保留有有效标签的记录，不包含本次 results / violations。
-  它也保留编号等辅助字段，不能把除 label 外的所有列直接当作模型特征；
-  默认候选特征及各列用途见 reports/feature_availability.csv。
-- Fail=1；Pass 和 Pass w/ Conditions=0。其他结果不参与有标签训练/评估，
-  但保留在历史表中，供严格早于当前检查的历史特征使用。
+- labelled_inspections.csv.gz 保存有标签记录及编号等辅助字段；模型输入使用 ass2_features.py 返回的 `X`。
+  各原始字段的用途见 reports/feature_availability.csv。
+- Fail=1；Pass 和 Pass w/ Conditions=0。其余结果的标签为空，作为历史访问保留。
 - 初步 establishment_key 优先使用有效 License #，缺失时回退到名称和地址，
   信息不足时使用单条检查键。后续需核查许可证跨地址和实体识别问题。
-- 不做随机训练/测试划分，不在全数据上拟合填补、缩放或编码器。
-  这些决策应在 EDA 后按时间顺序完成。
-- data/test/ 仅接受教学团队提供的输入；不查询隐藏测试期结果。
-- 所有项目输入、数据来源说明及必要输出应加入 Git；不要忽略整个 data/。
+- 按时间顺序划分训练、验证和测试数据；填补、缩放和编码规则仅在对应训练数据上拟合。
+- data/test/ 保存教学团队提供的检查前输入，隐藏测试期的 Results 和 Violations 属于禁用信息。
+- 将项目输入、数据来源说明及必要输出加入 Git。
 
 ## Assessment 1
 
@@ -137,6 +135,9 @@ Notebook 会校验快照哈希，避免新数据与旧结论混用。
 结果分析仅使用 2016-2025 年；2026 年用于后续本地留出评估，本次仅统计其记录数量和店铺重叠。
 
 ## Assessment 2
+
+首次克隆仓库后，先运行 `.\.venv\Scripts\python.exe scripts/prepare_data.py`，重建清洗表和校验清单。
+Git 会统一部分文本文件的换行符，这一步让校验值与当前检出文件一致。
 
 离线核查现有数据：`.\.venv\Scripts\python.exe scripts/ass2_audit_data.py`。
 结果直接在终端显示，固定数据版本见 [assessment2_data.json](config/assessment2_data.json)。
@@ -165,11 +166,15 @@ keep = train.y.notna()
 X_train, y_train = train.X.loc[keep], train.y.loc[keep]
 ~~~
 
-返回值包含 `X`（模型特征）、`y`（可为0或1或空的标签）和 `meta`（ID、日期、店铺键、历史截止时间及已知店铺标记）。
-三者按输入行顺序对齐，并重置索引。验证数据同样用 `valid.y.notna()` 筛选评分行。
-接口同时接受原始字段名和清洗字段名；预测输入可以没有 Results、Violations 或 label。
+返回三个按输入行顺序对齐、索引从 0 开始的对象：
 
-| 特征(`X`) | 字段与含义 |
+- `X`：交给模型的特征表，默认包含下表中的 13 个特征。
+- `y`：真实标签，Fail 为 1，Pass / Pass w/ Conditions 为 0，其余为空。训练和评分只选有标签的行。
+- `meta`：辅助信息，包括 `inspection_id`（对齐预测）、`inspection_date`（检查日期）、`establishment_key`（店铺匹配键）、`history_before`（只使用此日期之前的历史）和 `known_establishment`（此前是否有过访问，含无判断访问）。
+
+验证数据用 `valid.y.notna()` 筛选评分行。接口接受原始字段名和清洗字段名，也支持仅含检查前信息的预测输入。
+
+| 特征（`X`） | 字段与含义 |
 |---|---|
 | 基础类别 | facility_type、risk、inspection_type、zip、inspection_month、inspection_weekday；月份和星期作为类别，星期一为 0 |
 | 基础数值 | latitude、longitude；缺失或非法坐标保留为 NaN，留给训练流程处理 |
@@ -179,13 +184,30 @@ X_train, y_train = train.X.loc[keep], train.y.loc[keep]
 
 默认得到 8 个基础特征和 5 个历史特征。`include_history=False` 仅返回基础特征。
 `identity="license_address"` 可切换为许可证加地址分组，地址匹配同时考虑城市、州和 ZIP；
-有效许可证缺少地址时使用单条检查键，不把缺失地址统一合并。
+有效许可证缺少地址时，每条检查使用独立的键。
 没有有效许可证时，沿用名称和地址等信息的回退规则。
 
-训练行只使用更早日期的历史。验证或预测必须传入 `history` 和 `batch_start`，
-批次开始当天及之后的访问和结果全部排除。
-无判断访问增加 prior_visits，但不进入失败比例分母，也不覆盖最近有效结果。
-当前结果、违规文本、ID 和原始名称不进入 `X`；编码、填补和缩放由 B 在训练折内拟合。
+训练历史截至每条检查的前一天。验证和预测须传入 `history` 与 `batch_start`，整个批次共用起始日前的历史。
+例如，2025 年所有验证记录均使用 2025-01-01 之前的访问。
+无判断访问仅增加 `prior_visits`；失败比例和最近结果按有判断的访问计算。
+`X` 仅包含上表特征，编码、填补和缩放由 B 在训练折内拟合。
+
+正式预测使用专用入口，`test_inputs` 为老师提供的输入表：
+
+~~~python
+from ass2_features import build_prediction_features
+
+prediction = build_prediction_features(
+    test_inputs, history=history, batch_start="2026-10-31", identity="license"
+)
+# prediction.X 用于预测，prediction.meta.inspection_id 用于对齐输出。
+~~~
+
+该入口先移除预测输入中的 Results、label、Violations 及违规文本缺失标记，返回的 `y` 全为空。
+历史表须保留 Results 或 label 列，无判断访问在该列留空。程序先保留批次起始日前的历史，再解析其中的标签。
+
+现有 [EDA Notebook](notebooks/01_assessment1_eda.ipynb) 的第 13 节说明每组特征的依据与预测前可用条件，
+并检查移除标签后的特征一致性、历史边界和 ID 对齐。老师真实测试文件发布后，仍需核对其实际字段。
 
 ## 课程提交
 

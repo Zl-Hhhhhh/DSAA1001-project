@@ -1,8 +1,8 @@
 column,role,available_before_current_inspection,rule
-inspection_id,metadata,yes,"Identifier, not a continuous numeric feature."
+inspection_id,metadata,yes,Identifier for record alignment or business matching.
 dba_name,metadata,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
 aka_name,metadata,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
-license_number,metadata,yes,"Identifier, not a continuous numeric feature."
+license_number,metadata,yes,Identifier for record alignment or business matching.
 facility_type,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
 risk,candidate_feature,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.
 address,metadata,yes,Use only if supplied/known before inspection; fit statistical preprocessing on training data only.

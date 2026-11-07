@@ -2,7 +2,7 @@
 
 Run from the repository root:
     python scripts/ass2_audit_data.py
-No downloading, model fitting or source-data rewriting is performed.
+Reads saved raw and prepared files; prints the audit summary.
 """
 from __future__ import annotations
 
@@ -215,8 +215,8 @@ def audit(root=ROOT):
             for name in ["processed_history", "labelled_data"]
         },
         "limitations": [
-            "Full-snapshot administrative checks only; no time-specific failure rates or model scores.",
-            "Valid licence means a syntactically positive integer, not verification against a licence registry.",
+            "Checks cover snapshot integrity, field quality and record retention.",
+            "Valid licence means a positive integer; registry status requires separate verification.",
             "A shared licence or fallback key is provisional identity; multiple addresses need review.",
             "Same-day visits are retained; their ordering is unknown.",
         ],

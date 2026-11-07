@@ -1,8 +1,8 @@
 """Pre-visit static and strict-date history features for Assessment 2.
 
 build_features returns X, nullable y and ID/date/group metadata in input row order.
-For validation/prediction pass an explicit history and batch_start. Neither
-filling, encoding, scaling nor model fitting takes place here.
+For validation/prediction pass an explicit history and batch_start.
+The training pipeline handles imputation, encoding, scaling and model fitting.
 """
 from __future__ import annotations
 
@@ -99,7 +99,7 @@ def normalize_inspections(frame: pd.DataFrame) -> pd.DataFrame:
 
 
 def establishment_keys(data: pd.DataFrame, identity: str = "license") -> pd.Series:
-    """Build provisional keys from normalized input; never learn identities across rows."""
+    """Build a provisional key independently from each normalized record."""
     if identity not in {"license", "license_address"}:
         raise ValueError("identity must be 'license' or 'license_address'.")
 
@@ -170,17 +170,36 @@ def build_features(
     targets: pd.DataFrame, *, history: pd.DataFrame | None = None,
     batch_start=None, identity: str = "license", include_history: bool = True,
 ) -> FeatureSet:
-    """Return aligned features and metadata, without fitting statistical transforms.
+    """Return aligned features, nullable labels and metadata.
 
     Training: history may contain all visits; every row queries only earlier dates.
     Batch evaluation: batch_start is the inclusive prediction-period start, and
-    history is required. All visits on/after that date are excluded from history.
+    history is required. Use only visits strictly before that date.
     Returned indices are reset; meta.inspection_id preserves the input row order.
     """
     target = normalize_inspections(targets)
     if batch_start is not None and history is None:
         raise ValueError("An explicit history is required for batch prediction.")
-    source = normalize_inspections(targets if history is None else history)
+    source_input = (targets if history is None else history).rename(
+        columns=RAW_TO_CLEAN
+    ).copy().reset_index(drop=True)
+    if source_input.columns.duplicated().any():
+        raise ValueError("Ambiguous raw/prepared history column names.")
+    cutoff = target.inspection_date.copy()
+    if batch_start is not None:
+        start = pd.Timestamp(batch_start)
+        if pd.isna(start) or start.tzinfo is not None or start != start.normalize():
+            raise ValueError("batch_start must be a calendar date without a timezone.")
+        if target.inspection_date.lt(start).any():
+            raise ValueError("A target inspection precedes batch_start.")
+        if "inspection_date" not in source_input:
+            raise ValueError("Historical Inspection Date is required.")
+        # Discard unavailable rows before reading labels, IDs or identities.
+        source_input = source_input.loc[_dates(source_input.inspection_date).lt(start)]
+        cutoff = pd.Series(start, index=target.index, dtype="datetime64[ns]")
+    if not source_input.empty and not {"results", "label"}.intersection(source_input.columns):
+        raise ValueError("Nonempty history must include Results or label, even when all are missing.")
+    source = normalize_inspections(source_input)
     target["establishment_key"] = establishment_keys(target, identity)
     source["establishment_key"] = establishment_keys(source, identity)
     common = target[["inspection_id", "inspection_date", "establishment_key"]].merge(
@@ -192,16 +211,6 @@ def build_features(
         | common.establishment_key_target.ne(common.establishment_key_history)
     ).any():
         raise ValueError("A shared Inspection ID has inconsistent date or identity.")
-
-    cutoff = target.inspection_date.copy()
-    if batch_start is not None:
-        start = pd.Timestamp(batch_start)
-        if pd.isna(start) or start.tzinfo is not None or start != start.normalize():
-            raise ValueError("batch_start must be a calendar date without a timezone.")
-        if target.inspection_date.lt(start).any():
-            raise ValueError("A target inspection precedes batch_start.")
-        source = source.loc[source.inspection_date.lt(start)].copy()
-        cutoff = pd.Series(start, index=target.index, dtype="datetime64[ns]")
 
     past = _history_features(target, source, cutoff)
     X = target[["facility_type", "risk", "inspection_type", "zip"]].copy()
@@ -216,6 +225,27 @@ def build_features(
     meta["history_before"] = cutoff
     meta["known_establishment"] = past.prior_visits.gt(0)
     return FeatureSet(X=X, y=target.label.copy(), meta=meta)
+
+
+def build_prediction_features(
+    targets: pd.DataFrame, *, history: pd.DataFrame, batch_start,
+    identity: str = "license", include_history: bool = True,
+) -> FeatureSet:
+    """Build one unlabelled prediction batch from saved pre-batch history.
+
+    Drop current outcome columns and return missing y values.
+    Every target uses the same saved history from before batch_start.
+    """
+    if batch_start is None:
+        raise ValueError("batch_start is required for prediction.")
+    forbidden = {"results", "label", "violations", "violations_missing"}
+    inputs = targets.drop(columns=[
+        name for name in targets.columns if RAW_TO_CLEAN.get(name, name) in forbidden
+    ])
+    return build_features(
+        inputs, history=history, batch_start=batch_start,
+        identity=identity, include_history=include_history,
+    )
 
 
 def load_history(root: Path = ROOT) -> pd.DataFrame:
@@ -272,4 +302,4 @@ if __name__ == "__main__":
     )
     changed = ~same.all(axis=1) & primary.y.notna()
     print(f"Identity choice changes history for {changed.sum():,} labelled validation rows.")
-    print("Features built in memory; no files written, models fitted or local-test scores examined.")
+    print("Feature checks complete for training and 2025 validation data.")
